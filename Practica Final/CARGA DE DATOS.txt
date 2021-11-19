@@ -1,0 +1,658 @@
+INSERT INTO PAIS (Nombre) VALUES('España'),('Portugal'),('Inglaterra'),('Francia'),('Alemania'),('Italia'),('Estados Unidos'),('China'),('Argentina'),('Chile'),('Croacia'),('Holanda'),('Europa');
+
+INSERT INTO CIUDAD VALUES (1,'Madrid',1),(2,'Valladolid',1),(3,'Londres',3),(4,'Lisboa',2),(5,'Napoles',6),(6,'Guipuzcoa',1),(7,'Villareal',1),(8,'Sevilla',1),(9,'Barcelona',1), (10,'Liverpool',3),(11,'Amsterdam',12),(12,'Manchester',3);
+
+INSERT INTO AGENCIA (CodigoFiscal,Nombre,Pais) VALUES ('123564789','nik.O. Representantes',1),('253647521','Representaciones Manoli','2'),('548961347','RepresentActivate',2),('145627895','Rpresenta+',7),('478521369','Repreplus',3);
+INSERT INTO AGENCIA (CodigoFiscal,Nombre,Pais) VALUES ('123577777','A.N.U.R. Representantes',3),('253647111','Marcos Representantes','2'),('548964447','Representantes Lolo',4),('145627775','Representantes Juanma',6),('455521369','Uno+ Representantes',4);
+
+INSERT INTO PROFESIONAL (Pasaporte, Nombre,Apellidos,Nacionalidad,Fecha_Nacimiento,Fecha_Debut,Pais) VALUES ('1254678782','Hugo','Fernández Martín','Española','1994-02-05','2017-06-07',1), ('1254678783','Manuel','Fernández Pérez','Española','1987-04-11','2016-07-07',1), ('1254678784','Nacho','García Fernández','Española','1982-12-15','2015-06-25',1);
+INSERT INTO PROFESIONAL (Pasaporte, Nombre,Apellidos,Nacionalidad,Fecha_Nacimiento,Fecha_Debut,Pais) VALUES ('AK1524785','Zinedine','Zidane','Francesa','1978-02-05','2000-06-07',4),('AL1452789','Jorge','Sampaoli','Argentina','1978-12-05','2019-06-07',9),('AL2552789','Gerardo','Martino','Argentina','1970-12-15','2019-06-10',9),('AL1452999','Lionel','Scaloni','Argentina','1980-12-05','2019-11-07',9);
+INSERT INTO PROFESIONAL (Pasaporte, Nombre,Apellidos,Nacionalidad,Fecha_Nacimiento,Fecha_Debut,Pais) VALUES ('KI5467888','Alvaro','Morata','Española','1994-02-05','2019-06-07',1), ('LM110519','Luca','Modric','Croata','1987-04-11','2016-07-07',11), ('KK1254789','Nacho','García Martinez','Chilena','1988-12-15','2019-06-25',10);
+INSERT INTO PROFESIONAL (Pasaporte, Nombre,Apellidos,Nacionalidad,Fecha_Nacimiento,Fecha_Debut,Pais) VALUES ('KI5667888','Jordi','Masip','Española','1994-02-05','2019-06-07',1), ('LM770519','Moyano','Garcia','Chilena','1987-04-11','2019-02-03',10), ('KK1251249','Nacho','Olivas','Chilena','1988-06-15','2019-06-27',10);
+INSERT INTO PROFESIONAL (Pasaporte, Nombre,Apellidos,Nacionalidad,Fecha_Nacimiento,Fecha_Debut,Pais) VALUES ('AL2555555','Salisu','Fernández Martín','Española','1994-11-05','2017-06-07',1), ('AL1444444','Manuel','Barba','Española','1987-04-11','2015-07-07',1), ('AG8512345','Toni','García ','Española','1982-12-15','2019-06-25',1);
+INSERT INTO PROFESIONAL (Pasaporte, Nombre,Apellidos,Nacionalidad,Fecha_Nacimiento,Fecha_Debut,Pais) VALUES ('AK1524555','Michel','Zamora','Francesa','1978-02-05','2010-06-07',4),('AL1552789','Jorge','Alcaraz','Argentina','1978-12-05','2018-06-07',9),('AL2514289','Joaquin','Reyes','Argentina','1970-12-15','2019-06-10',9),('AL1458899','Antoñito','Scaloni','Argentina','1980-12-05','2017-11-07',9);
+INSERT INTO PROFESIONAL (Pasaporte, Nombre,Apellidos,Nacionalidad,Fecha_Nacimiento,Fecha_Debut,Pais) VALUES ('K12467888','Alvaro','Plano','Española','1994-02-05','2018-06-07',1), ('LM210519','Gerard','Guardiola','Croata','1987-04-11','2016-07-07',11), ('KK1254777','Sandro','García Martinez','Chilena','1998-12-15','2019-06-25',10);
+INSERT INTO PROFESIONAL (Pasaporte, Nombre,Apellidos,Nacionalidad,Fecha_Nacimiento,Fecha_Debut,Pais) VALUES ('KI5557888','Unal','Mas','Española','1994-02-05','2019-06-07',1), ('LM870519','Fabricio','Garcia','Chilena','1987-04-11','2019-02-03',10), ('KL1251249','Ander','Sastre','Chilena','1988-06-15','2019-11-27',10);
+INSERT INTO PROFESIONAL (Pasaporte, Nombre,Apellidos,Nacionalidad,Fecha_Nacimiento,Fecha_Debut,Pais) VALUES ('AL2455555','Valjent','Perez Martín','Española','1994-11-05','2016-06-07',1), ('AL1544444','Manuel','Raillo','Española','1987-04-11','2015-07-07',1), ('AG8512445','Lumor','García ','Española','1992-12-15','2019-06-25',1);
+INSERT INTO PROFESIONAL (Pasaporte, Nombre,Apellidos,Nacionalidad,Fecha_Nacimiento,Fecha_Debut,Pais) VALUES ('AK1533555','Adrian','Pedraza','Francesa','1988-02-05','2010-06-07',4),('AL1552799','Febas','Alcaraz','Argentina','1978-12-05','2019-06-07',9),('AL2534289','Dani','Rodriguez','Argentina','1980-05-15','2019-06-10',9),('AL1158899','Salva','Sevilla','Argentina','1990-12-05','2017-11-07',9);
+INSERT INTO PROFESIONAL (Pasaporte, Nombre,Apellidos,Nacionalidad,Fecha_Nacimiento,Fecha_Debut,Pais) VALUES ('K12477888','Abdon','Plano','Española','1993-02-05','2018-06-07',1), ('LM211119','Kubo','Guardiola','Croata','1999-04-11','2016-07-07',11), ('KK2254777','Aridai','García Martinez','Chilena','1998-11-15','2019-06-25',10);
+INSERT INTO PROFESIONAL (Pasaporte, Nombre,Apellidos,Nacionalidad,Fecha_Nacimiento,Fecha_Debut,Pais) VALUES ('K41557888','Lago','Junior','Española','1994-02-05','2017-06-07',1), ('LM970519','Budimir','Garcia','Chilena','1987-04-11','2009-02-03',10);
+INSERT INTO PROFESIONAL (Pasaporte, Nombre,Apellidos,Nacionalidad,Fecha_Nacimiento,Fecha_Debut,Pais) VALUES ('AK1433555','Lodi','Pedraza','Francesa','1988-02-05','2010-06-07',4),('LL1552799','Thomas','Partic','Argentina','1978-12-05','2019-06-07',9),('AL2424289','Dani','Vazquez','Argentina','1980-05-15','2019-06-10',9),('AL1147899','Oliver','Martin','Argentina','1990-12-05','2016-11-07',9);
+INSERT INTO PROFESIONAL (Pasaporte, Nombre,Apellidos,Nacionalidad,Fecha_Nacimiento,Fecha_Debut,Pais) VALUES ('K42477888','Jordan','Plano','Española','1993-02-05','2018-06-07',1), ('LL211119','Angel','Correa','Croata','1999-04-11','2016-07-07',11), ('KK2258777','Gudelj','García Martinez','Chilena','1998-11-15','2019-10-25',10);
+INSERT INTO PROFESIONAL (Pasaporte, Nombre,Apellidos,Nacionalidad,Fecha_Nacimiento,Fecha_Debut,Pais) VALUES ('K43377888','Ontiveros','Plano','Española','1993-02-05','2016-06-07',1), ('LL233119','Carlos','Bacca','Croata','1999-04-11','2015-07-07',11), ('KK1258777','Chukwueze','García Martinez','Chilena','1988-11-15','2019-10-25',10);
+INSERT INTO PROFESIONAL (Pasaporte, Nombre,Apellidos,Nacionalidad,Fecha_Nacimiento,Fecha_Debut,Pais) VALUES ('K45577888','Medie','Jimenez','Española','1993-02-05','2016-06-07',1), ('LL243119','Jesus','Gil Manzano','Croata','1990-04-11','2015-07-07',11), ('KK1298557','Antonio','Mateu Lahoz','Chilena','1988-11-15','2019-10-25',10);
+INSERT INTO PROFESIONAL (Pasaporte, Nombre,Apellidos,Nacionalidad,Fecha_Nacimiento,Fecha_Debut,Pais) VALUES ('KI6557888','Cesar','Soto','Española','1994-02-05','2019-06-07',1), ('LM880619','Carlos','del Cerro','Chilena','1987-04-11','2019-02-03',10), ('KL1256249','Jose Maria','Sanchez','Chilena','1978-06-15','2019-11-27',10);
+INSERT INTO PROFESIONAL (Pasaporte, Nombre,Apellidos,Nacionalidad,Fecha_Nacimiento,Fecha_Debut,Pais) VALUES ('PG5214569','Pedro','Gomez','Española','1976-06-14','2003-04-12',1);
+INSERT INTO PROFESIONAL (Pasaporte, Nombre,Apellidos,Nacionalidad,Fecha_Nacimiento,Fecha_Debut,Pais)
+	 VALUES ('78451236L','Sergi','Guardiola','Navarro','1979-12-10','2010-06-07',1);
+INSERT INTO PROFESIONAL (Pasaporte, Nombre,Apellidos,Nacionalidad,Fecha_Nacimiento,Fecha_Debut,Pais) VALUES ('OJ1111111','Paul','Pogba','Francesa','1992-02-05','2015-06-07',4), ('OJ1111114','David ','de Gea','Española','1990-04-11','2014-07-07',1), ('OJ1111117','Luke','Shaw','Inglesa','1989-12-15','2014-06-25',3);
+INSERT INTO PROFESIONAL (Pasaporte, Nombre,Apellidos,Nacionalidad,Fecha_Nacimiento,Fecha_Debut,Pais) VALUES ('OJ1111112','Anthony','Martial','Francesa','1996-02-05','2014-06-07',4),('OJ1111115','Marcus','Rasfhord','Inglesa','1997-12-05','2016-06-07',3),('OJ1111118','Marcos','Rojo','Argentina','1988-12-15','2013-06-10',9);
+INSERT INTO PROFESIONAL (Pasaporte, Nombre,Apellidos,Nacionalidad,Fecha_Nacimiento,Fecha_Debut,Pais) VALUES ('OJ1111113','Juan','Mata','Española','1994-02-05','2014-06-07',1), ('OJ1111116','Jesse','Lingard','Inglesa','1990-04-11','2016-07-07',3), ('OJ1111119','Alexis','Sanchez','Chilena','1988-12-15','2017-06-25',10);
+INSERT INTO PROFESIONAL (Pasaporte, Nombre,Apellidos,Nacionalidad,Fecha_Nacimiento,Fecha_Debut,Pais) 
+	VALUES ('75412156K','Munir','El Haddadi','Española','1974-06-14','2001-05-07',1);
+INSERT INTO PROFESIONAL (Pasaporte, Nombre,Apellidos,Nacionalidad,Fecha_Nacimiento,Fecha_Debut,Pais) 
+	VALUES ('75412456K','Jesus','Navas','Española','1984-06-14','2005-06-03',1);
+INSERT INTO PROFESIONAL (Pasaporte, Nombre,Apellidos,Nacionalidad,Fecha_Nacimiento,Fecha_Debut,Pais) 
+	VALUES ('74127846K','Diego','Costa','Española','1979-06-14','2001-04-03',1);
+INSERT INTO PROFESIONAL (Pasaporte, Nombre,Apellidos,Nacionalidad,Fecha_Nacimiento,Fecha_Debut,Pais) 
+	VALUES ('75213497K','Koke','Resurreccion','Española','1984-06-14','2006-06-01',1);
+INSERT INTO PROFESIONAL (Pasaporte, Nombre,Apellidos,Nacionalidad,Fecha_Nacimiento,Fecha_Debut,Pais) VALUES ('OC1111117','Daniel','Carrico','Portugesa','1989-12-15','2014-06-25',2);
+INSERT INTO PROFESIONAL (Pasaporte, Nombre,Apellidos,Nacionalidad,Fecha_Nacimiento,Fecha_Debut,Pais) VALUES ('OC1111115','Mario','Hermoso','Española','1997-12-05','2016-06-07',1);
+INSERT INTO PROFESIONAL (Pasaporte, Nombre,Apellidos,Nacionalidad,Fecha_Nacimiento,Fecha_Debut,Pais) VALUES ('OC1111118','Franco','Vazquez','Argentina','1988-12-15','2013-06-10',9);
+INSERT INTO PROFESIONAL (Pasaporte, Nombre,Apellidos,Nacionalidad,Fecha_Nacimiento,Fecha_Debut,Pais) VALUES ('OC1111116','Kenan','Trippier','Inglesa','1990-04-11','2016-07-07',3); 
+INSERT INTO PROFESIONAL (Pasaporte, Nombre,Apellidos,Nacionalidad,Fecha_Nacimiento,Fecha_Debut,Pais) VALUES ('OC1111119','Sergio','Reguilon','Española','1988-12-15','2017-06-25',1);
+INSERT INTO PROFESIONAL (Pasaporte, Nombre,Apellidos,Nacionalidad,Fecha_Nacimiento,Fecha_Debut,Pais) VALUES ('OC1111121','Jesus','Navas','Española','1990-04-11','2016-07-07',1); 
+INSERT INTO PROFESIONAL (Pasaporte, Nombre,Apellidos,Nacionalidad,Fecha_Nacimiento,Fecha_Debut,Pais) VALUES ('OC1111122','Sergio','Rico','Española','1988-12-15','2017-06-25',1);
+INSERT INTO PROFESIONAL (Pasaporte, Nombre,Apellidos,Nacionalidad,Fecha_Nacimiento,Fecha_Debut,Pais) VALUES ('OM1111117','Iñaki','Williams','Española','1989-12-15','2014-06-25',1);
+INSERT INTO PROFESIONAL (Pasaporte, Nombre,Apellidos,Nacionalidad,Fecha_Nacimiento,Fecha_Debut,Pais) VALUES ('OM1111115','Iker','Muniain','Española','1997-12-05','2016-06-07',1);
+INSERT INTO PROFESIONAL (Pasaporte, Nombre,Apellidos,Nacionalidad,Fecha_Nacimiento,Fecha_Debut,Pais) VALUES ('OM1111118','Funes','Mori','Argentina','1988-12-15','2013-06-10',9);
+INSERT INTO PROFESIONAL (Pasaporte, Nombre,Apellidos,Nacionalidad,Fecha_Nacimiento,Fecha_Debut,Pais) VALUES ('OM1111116','Manu','Trigeros','Española','1990-04-11','2016-07-07',1); 
+INSERT INTO PROFESIONAL (Pasaporte, Nombre,Apellidos,Nacionalidad,Fecha_Nacimiento,Fecha_Debut,Pais) VALUES ('OM1111119','Ander','Capa','Española','1988-12-15','2017-06-25',1);
+INSERT INTO PROFESIONAL (Pasaporte, Nombre,Apellidos,Nacionalidad,Fecha_Nacimiento,Fecha_Debut,Pais) VALUES ('OM1111121','Gerard ','Moreno','Española','1990-04-11','2016-07-07',1); 
+INSERT INTO PROFESIONAL (Pasaporte, Nombre,Apellidos,Nacionalidad,Fecha_Nacimiento,Fecha_Debut,Pais) 
+VALUES ('KB1155789','Karim','Benzema','Francesa','1987-12-14','2007-03-28',4);
+
+
+
+
+INSERT INTO FUTBOLISTA (Pasaporte,Posicion,Valor,Rendimiento_Seleccion,Goles_Seleccion,Internacionalidades) VALUES ('K43377888','DC',2300000,81.2,25,45),('LL233119','MC',29000000,83.5,15,40),('KK1258777','DEF',180000,0,0,0);
+INSERT INTO FUTBOLISTA (Pasaporte,Posicion,Valor,Rendimiento_Seleccion,Goles_Seleccion,Internacionalidades) VALUES ('AK1433555','DC',2300000,81.2,25,45),('LL1552799','MC',29000000,83.5,15,40),('AL2424289','DEF',180000,0,0,0),('AL1147899','MC',170000,0,0,0);
+INSERT INTO FUTBOLISTA (Pasaporte,Posicion,Valor,Rendimiento_Seleccion,Goles_Seleccion,Internacionalidades) VALUES ('K42477888','P',2500000,81.2,0,15),('LL211119','DC',29000000,66.5,15,40),('KK2258777','LD',170000,0,0,0);
+INSERT INTO FUTBOLISTA (Pasaporte,Posicion,Valor,Rendimiento_Seleccion,Goles_Seleccion,Internacionalidades) VALUES ('AL2455555','DEF',250000,81.2,0,15),('AL1544444','EI',290000,83.5,5,30),('AG8512445','LI',170000,0,0,0);
+INSERT INTO FUTBOLISTA (Pasaporte,Posicion,Valor,Rendimiento_Seleccion,Goles_Seleccion,Internacionalidades) VALUES ('AK1533555','LD',2400000,71.2,10,38),('AL1552799','MC',29000000,60.5,12,20),('AL2514289','MC',180000,0,0,0),('AL1458899','MC',180000,0,0,0);
+INSERT INTO FUTBOLISTA (Pasaporte,Posicion,Valor,Rendimiento_Seleccion,Goles_Seleccion,Internacionalidades) VALUES ('K12477888','EI',2100000,50.2,0,15),('LM211119','DC',29000000,53.5,18,40);
+INSERT INTO FUTBOLISTA (Pasaporte,Posicion,Valor,Rendimiento_Seleccion,Goles_Seleccion,Internacionalidades) VALUES ('K41557888','EI',2100000,40.2,0,15),('LM970519','ED',29000000,59.5,19,40);
+INSERT INTO FUTBOLISTA (Pasaporte,Posicion,Valor,Rendimiento_Seleccion,Goles_Seleccion,Internacionalidades) VALUES ('KK2254777','DC',1190000,0,0,0);
+INSERT INTO FUTBOLISTA (Pasaporte,Posicion,Valor,Rendimiento_Seleccion,Goles_Seleccion,Internacionalidades) VALUES ('AL1158899','DC',170000,0,0,0);
+INSERT INTO FUTBOLISTA (Pasaporte,Posicion,Valor,Rendimiento_Seleccion,Goles_Seleccion,Internacionalidades) VALUES ('AL2555555','DEF',250000,81.2,0,15),('AL1444444','DC',29000000,83.5,15,40),('AG8512345','LI',170000,0,0,0);
+INSERT INTO FUTBOLISTA (Pasaporte,Posicion,Valor,Rendimiento_Seleccion,Goles_Seleccion,Internacionalidades) VALUES ('K12467888','EI',2100000,50.2,0,15),('LM210519','DC',29000000,53.5,15,40),('KK1254777','DC',170000,0,0,0);
+INSERT INTO FUTBOLISTA (Pasaporte,Posicion,Valor,Rendimiento_Seleccion,Goles_Seleccion,Internacionalidades) VALUES ('KI5557888','EI',2100000,40.2,0,15),('LM870519','DC',29000000,53.5,15,40),('KL1251249','DC',170000,0,0,0);
+INSERT INTO FUTBOLISTA (Pasaporte,Posicion,Valor,Rendimiento_Seleccion,Goles_Seleccion,Internacionalidades) VALUES ('KI5467888','DC',2500000,81.2,25,35),('LM110519','MC',29000000,83.5,15,40),('KK1254789','DEF',180000,0,0,0);
+INSERT INTO FUTBOLISTA (Pasaporte,Posicion,Valor,Rendimiento_Seleccion,Goles_Seleccion,Internacionalidades) VALUES ('KI5667888','P',2500000,81.2,0,15),('LM770519','DC',29000000,83.5,15,40),('KK1251249','DC',170000,0,0,0);
+INSERT INTO FUTBOLISTA (Pasaporte,Posicion,Valor,Rendimiento_Seleccion,Goles_Seleccion,Internacionalidades) 
+	VALUES ('78451236L','DC',1500000,79.4,3,5);
+INSERT INTO FUTBOLISTA (Pasaporte,Posicion,Valor,Rendimiento_Seleccion,Goles_Seleccion,Internacionalidades) VALUES ('AK1524555','DC',2700000,83.2,25,45);
+INSERT INTO FUTBOLISTA (Pasaporte,Posicion,Valor,Rendimiento_Seleccion,Goles_Seleccion,Internacionalidades) VALUES ('AL2534289','DC',2700000,83.2,25,45);
+INSERT INTO FUTBOLISTA (Pasaporte,Posicion,Valor,Rendimiento_Seleccion,Goles_Seleccion,Internacionalidades) 
+	VALUES ('AK1524785','DC',3320000,84.4,20,10),('AL1452789','MC',1120000,30.4,7,6),('AL1452999','EI',2300000,12.8,3,4);
+INSERT INTO FUTBOLISTA (Pasaporte,Posicion,Valor,Rendimiento_Seleccion,Goles_Seleccion,Internacionalidades) 
+	VALUES ('AL2552789','LD',1000000,7.3,7,2),('PG5214569','ED',1220000,32.5,12,9);
+INSERT INTO FUTBOLISTA (Pasaporte,Posicion,Valor,Rendimiento_Seleccion,Goles_Seleccion,Internacionalidades) VALUES ('OJ1111111','MC',10000000,90.2,10,54),('OJ1111114','P',68000000,83.5,0,40),('OJ1111117','DEF',180000,51.7,0,5);
+INSERT INTO FUTBOLISTA (Pasaporte,Posicion,Valor,Rendimiento_Seleccion,Goles_Seleccion,Internacionalidades) VALUES ('OJ1111112','EI',7300000,70.2,5,20),('OJ1111115','DC',89000000,93.5,28,40),('OJ1111118','DEF',180000,0,0,0);
+INSERT INTO FUTBOLISTA (Pasaporte,Posicion,Valor,Rendimiento_Seleccion,Goles_Seleccion,Internacionalidades) VALUES ('OJ1111113','MC',2500000,81.2,0,15),('OJ1111116','MC',52000000,66.5,1,20),('OJ1111119','ED',170000,75.1,25,61);
+INSERT INTO FUTBOLISTA (Pasaporte,Posicion,Valor,Rendimiento_Seleccion,Goles_Seleccion,Internacionalidades) 
+	VALUES ('75412156K','DC',260000,81.4,0,14);
+INSERT INTO FUTBOLISTA (Pasaporte,Posicion,Valor,Rendimiento_Seleccion,Goles_Seleccion,Internacionalidades) 
+	VALUES ('75412456K','DEF',390000,87.2,3,22);
+INSERT INTO FUTBOLISTA (Pasaporte,Posicion,Valor,Rendimiento_Seleccion,Goles_Seleccion,Internacionalidades) 
+	VALUES ('74127846K','DC',3200000,89.4,5,14);
+INSERT INTO FUTBOLISTA (Pasaporte,Posicion,Valor,Rendimiento_Seleccion,Goles_Seleccion,Internacionalidades) 
+	VALUES ('75213497K','MC',780000,80.3,0,8);
+INSERT INTO FUTBOLISTA (Pasaporte,Posicion,Valor,Rendimiento_Seleccion,Goles_Seleccion,Internacionalidades) VALUES ('OC1111116','MC',10000000,90.2,10,54),('OC1111122','P',68000000,83.5,0,40);
+INSERT INTO FUTBOLISTA (Pasaporte,Posicion,Valor,Rendimiento_Seleccion,Goles_Seleccion,Internacionalidades) VALUES ('OC1111119','DEF',180000,0,0,0);
+INSERT INTO FUTBOLISTA (Pasaporte,Posicion,Valor,Rendimiento_Seleccion,Goles_Seleccion,Internacionalidades) VALUES ('OC1111121','MC',52000000,66.5,1,20),('OC1111115','ED',170000,75.1,25,61);
+INSERT INTO FUTBOLISTA (Pasaporte,Posicion,Valor,Rendimiento_Seleccion,Goles_Seleccion,Internacionalidades) VALUES ('OC1111117','MC',52000000,66.5,1,20),('OC1111118','ED',170000,75.1,25,61);
+INSERT INTO FUTBOLISTA (Pasaporte,Posicion,Valor,Rendimiento_Seleccion,Goles_Seleccion,Internacionalidades) VALUES ('OM1111116','MC',10000000,90.2,10,54);
+INSERT INTO FUTBOLISTA (Pasaporte,Posicion,Valor,Rendimiento_Seleccion,Goles_Seleccion,Internacionalidades) VALUES ('OM1111119','DEF',180000,0,0,0);
+INSERT INTO FUTBOLISTA (Pasaporte,Posicion,Valor,Rendimiento_Seleccion,Goles_Seleccion,Internacionalidades) VALUES ('OM1111121','MC',52000000,66.5,1,20),('OM1111115','ED',170000,75.1,25,61);
+INSERT INTO FUTBOLISTA (Pasaporte,Posicion,Valor,Rendimiento_Seleccion,Goles_Seleccion,Internacionalidades) VALUES ('OM1111117','MC',52000000,66.5,1,20),('OM1111118','ED',170000,75.1,25,61);
+INSERT INTO FUTBOLISTA (Pasaporte,Posicion,Valor,Rendimiento_Seleccion,Goles_Seleccion,Internacionalidades)
+VALUES ('KB1155789','DC',3120000,60.3,12,13);
+
+
+
+
+INSERT INTO ENTRENADOR (Pasaporte,Seleccionador,Numero_Partidos_Seleccionador) VALUES ('AK1524785',false,0),('AL1452789',true,20),('AL2552789',true,32),('AL1452999',false,0),('PG5214569',true,10);
+
+INSERT INTO ARBITRO (Pasaporte,Institucion,Partidos_selecciones,Profesion_aparte) VALUES ('K45577888','Colegio Regional Catalán',3,'Pescadero'),('LL243119','Colegio Regional Valenciano',3,NULL),('KK1298557','Colegio Regional Andaluz',3,'Profesor');
+INSERT INTO ARBITRO (Pasaporte,Institucion,Partidos_selecciones,Profesion_aparte) VALUES ('KI6557888','Colegio Regional Navarro',3,'Camionero'),('LM880619','Colegio Regional Valenciano',3,NULL),('KL1256249','Colegio Regional Andaluz',3,NULL);
+
+INSERT INTO REPRESENTAR_1 (Futbolista,Agencia,Fecha_Ini,Fecha_Fin) VALUES ('LM110519','123564789','2019-02-03',NULL),('LM110519','123577777','2018-02-03',NULL),('LM110519','145627775','2017-02-03',NULL);
+INSERT INTO REPRESENTAR_1 (Futbolista,Agencia,Fecha_Ini,Fecha_Fin) VALUES ('K12477888','123564789','2019-11-03',NULL),('KK1251249','123564789','2018-02-03',NULL),('AL1552799','123564789','2017-02-03',NULL),('AG8512345','123564789','2019-03-03',NULL),('AG8512445','123564789','2019-04-13',NULL);
+INSERT INTO REPRESENTAR_1 (Futbolista,Agencia,Fecha_Ini,Fecha_Fin) VALUES ('AL1158899','478521369','2019-02-03',NULL),('AL2424289','123577777','2018-02-03',NULL),('AG8512345','548964447','2017-02-03',NULL);
+
+
+INSERT INTO REPRESENTAR_2 (Entrenador,Agencia,Fecha_Ini,Fecha_Fin) VALUES ('AK1524785','123564789','2019-11-03',NULL),('AL1452789','123564789','2019-12-03',NULL);
+INSERT INTO REPRESENTAR_2 (Entrenador,Agencia,Fecha_Ini,Fecha_Fin) VALUES ('AL1452789','478521369','2019-11-03',NULL),('PG5214569','123577777','2019-12-03',NULL),('AL2552789','548964447','2019-12-03',NULL);
+
+
+INSERT INTO ESTADIO (Nombre, AnioInauguracion, Capacidad, Anchura, Longitud, Pais, Codigo)
+	VALUES ('Estadio Jose Zorrilla' , 1982, 27846, 68, 105, 1, 2); 
+INSERT INTO ESTADIO (Nombre,AnioInauguracion, Capacidad, Anchura, Longitud, Pais, Codigo)
+	VALUES ('Santiago Bernabeu', 1944, 81044, 68, 105, 1, 1);
+INSERT INTO ESTADIO (Nombre, AnioInauguracion, Capacidad, Anchura, Longitud, Pais, Codigo)
+	VALUES ('Anoeta',1993,40000,70,105,1,6); 
+INSERT INTO ESTADIO (Nombre,AnioInauguracion, Capacidad, Anchura, Longitud, Pais, Codigo)
+	VALUES ('Vicente Calderon',1959,54907,68,105,1,1); 
+INSERT INTO ESTADIO (Nombre, AnioInauguracion, Capacidad, Anchura, Longitud, Pais, Codigo)
+	VALUES ('Metropolitano',2017,68456,68,105,1,1); 
+INSERT INTO ESTADIO (Nombre, AnioInauguracion, Capacidad, Anchura, Longitud, Pais, Codigo)
+	VALUES ('Butarque',1998,12450,68,105,1,1); 
+INSERT INTO ESTADIO (Nombre, AnioInauguracion, Capacidad, Anchura, Longitud, Pais, Codigo)
+	VALUES ('Coliseum Alfonso Perez',1998,17000,68,105,1,1); 
+INSERT INTO ESTADIO (Nombre, AnioInauguracion, Capacidad, Anchura, Longitud, Pais, Codigo)
+	VALUES ('Vallecas',1976,14505,68,105,1,1); 
+INSERT INTO ESTADIO (Nombre, AnioInauguracion, Capacidad, Anchura, Longitud, Pais, Codigo)
+	VALUES ('La Ceramica',1923,23500,68,105,1,7); 
+INSERT INTO ESTADIO (Nombre,AnioInauguracion, Capacidad, Anchura, Longitud, Pais, Codigo)
+	VALUES ('Ramon Sanchez-Pizjuan',1958,43883,68,105,1,8); 
+INSERT INTO ESTADIO (Nombre,AnioInauguracion, Capacidad, Anchura, Longitud, Pais, Codigo)
+	VALUES ('Camp Nou',99354,1954,68,105,1,9); 
+INSERT INTO ESTADIO (Nombre,AnioInauguracion, Capacidad, Anchura, Longitud, Pais, Codigo)
+	VALUES ('Stamford Bridge',1903,67200,80,120,3,3); 
+INSERT INTO ESTADIO (Nombre, AnioInauguracion, Capacidad, Anchura, Longitud, Pais, Codigo)
+	VALUES ('da Luz',2003,66500,68,105,2,4); 
+INSERT INTO ESTADIO (Nombre,AnioInauguracion, Capacidad, Anchura, Longitud, Pais, Codigo)
+	VALUES ('San Paolo',1959,55000,68,110,6,5); 
+INSERT INTO ESTADIO (Nombre, AnioInauguracion, Capacidad, Anchura, Longitud, Pais, Codigo)
+	VALUES ('Anfield',1884,54074,68,101,3,10); 
+INSERT INTO ESTADIO (Nombre,  AnioInauguracion, Capacidad, Anchura, Longitud, Pais, Codigo)
+	VALUES ('Johan Cruyff Arena',1996,54990,68,105,12,11); 
+INSERT INTO ESTADIO (Nombre, AnioInauguracion, Capacidad, Anchura, Longitud, Pais, Codigo)
+	VALUES ('Etihad Stadium',2002,55097,68,105,3,12); 
+INSERT INTO ESTADIO (Nombre,  AnioInauguracion, Capacidad, Anchura, Longitud, Pais, Codigo)
+	VALUES ('Old Trafford',1910,76000,68,105,3,12); 
+
+INSERT INTO EQUIPO (Nombre, AnioFundacion)
+	VALUES ('Real Valladolid',1928);
+INSERT INTO EQUIPO (Nombre, AnioFundacion)
+	VALUES ('Real Madrid',1902);
+INSERT INTO EQUIPO (Nombre, AnioFundacion)
+	VALUES ('Barcelona',1899);
+INSERT INTO EQUIPO (Nombre,AnioFundacion)
+	VALUES ('Mallorca',1916);
+INSERT INTO EQUIPO (Nombre, AnioFundacion)
+	VALUES ('Liverpool',1892);
+INSERT INTO EQUIPO (Nombre,AnioFundacion)
+	VALUES ('Manchester United',1878);
+INSERT INTO EQUIPO (Nombre,AnioFundacion)
+	VALUES ('Manchester City',1880);
+INSERT INTO EQUIPO (Nombre,AnioFundacion)
+	VALUES ('Chelsea',1905);
+INSERT INTO EQUIPO (Nombre, AnioFundacion)
+	VALUES ('Napoles',1926);
+INSERT INTO EQUIPO (Nombre, AnioFundacion)
+	VALUES ('Benfica',1904);
+INSERT INTO EQUIPO (Nombre,AnioFundacion)
+	VALUES ('Sevilla',1890);
+INSERT INTO EQUIPO (Nombre, AnioFundacion)
+	VALUES ('Villareal',1923);
+INSERT INTO EQUIPO (Nombre, AnioFundacion)
+	VALUES ('Leganes',1928);
+INSERT INTO EQUIPO (Nombre,AnioFundacion)
+	VALUES ('Real Sociedad',1909);
+INSERT INTO EQUIPO (Nombre,AnioFundacion)
+	VALUES ('Getafe',1983);
+INSERT INTO EQUIPO (Nombre,AnioFundacion)
+	VALUES ('Rayo Vallecano',1924);
+INSERT INTO EQUIPO (Nombre, AnioFundacion)
+	VALUES ('Ajax',1900);
+INSERT INTO EQUIPO (Nombre, AnioFundacion)
+	VALUES ('Atletico de Madrid',1903);
+INSERT INTO EQUIPO (Nombre, AnioFundacion)
+	VALUES ('Athletic de Bilbao',1898);
+INSERT INTO EQUIPO (Nombre,AnioFundacion)
+	VALUES ('Crystal Palace',1905);
+INSERT INTO EQUIPO (Nombre,AnioFundacion)
+	VALUES ('Everton',1878);
+INSERT INTO EQUIPO (Nombre, AnioFundacion)
+	VALUES ('Tottenham',1882);
+INSERT INTO EQUIPO (Nombre,AnioFundacion)
+	VALUES ('Aston Villa',1874);
+INSERT INTO EQUIPO (Nombre, AnioFundacion)
+	VALUES ('West Ham United',1895);
+INSERT INTO EQUIPO (Nombre, AnioFundacion)
+	VALUES ('Olympique Lyonnais',1950);
+INSERT INTO EQUIPO (Nombre,AnioFundacion)
+	VALUES ('Atalanta',1907);
+INSERT INTO EQUIPO (Nombre,AnioFundacion)
+	VALUES ('Bayer 04 Leverkusen',1904);
+INSERT INTO EQUIPO (Nombre,AnioFundacion)
+	VALUES ('KRC Genk',1988);
+INSERT INTO EQUIPO (Nombre, AnioFundacion)
+	VALUES ('Red Bull Salzburg',1933);
+INSERT INTO EQUIPO (Nombre, AnioFundacion)
+	VALUES ('Slavia Praha',1892);
+INSERT INTO EQUIPO (Nombre, AnioFundacion)
+	VALUES ('Galatasaray',1905);
+INSERT INTO EQUIPO (Nombre, AnioFundacion)
+	VALUES ('Eibar',1940);
+INSERT INTO EQUIPO (Nombre, AnioFundacion)
+	VALUES ('Real Betis',1907);
+
+INSERT INTO POSEER (Estadio, Equipo)
+	VALUES(1, 'Real Valladolid');
+INSERT INTO POSEER (Estadio, Equipo)
+	VALUES(2, 'Real Madrid');
+INSERT INTO POSEER (Estadio, Equipo)
+	VALUES(3,'Real Sociedad');
+INSERT INTO POSEER (Estadio, Equipo)
+	VALUES(4,'Atletico de Madrid');
+INSERT INTO POSEER (Estadio, Equipo)
+	VALUES(5,'Atletico de Madrid');
+INSERT INTO POSEER (Estadio, Equipo)
+	VALUES(6,'Leganes');
+INSERT INTO POSEER (Estadio, Equipo)
+	VALUES(7,'Getafe');
+INSERT INTO POSEER (Estadio, Equipo)
+	VALUES(8, 'Rayo Vallecano');
+INSERT INTO POSEER (Estadio, Equipo)
+	VALUES(9,'Villareal');
+INSERT INTO POSEER (Estadio, Equipo)
+	VALUES(10,'Sevilla');
+INSERT INTO POSEER (Estadio, Equipo)
+	VALUES(11,'Barcelona');
+INSERT INTO POSEER (Estadio, Equipo)
+	VALUES(12, 'Chelsea');
+INSERT INTO POSEER (Estadio, Equipo)
+	VALUES(13,'Benfica');
+INSERT INTO POSEER (Estadio, Equipo)
+	VALUES(14,'Napoles');
+INSERT INTO POSEER (Estadio, Equipo)
+	VALUES(15,'Liverpool');
+INSERT INTO POSEER (Estadio, Equipo)
+	VALUES(16,'Ajax');
+INSERT INTO POSEER (Estadio, Equipo)
+	VALUES(17,'Manchester City');
+INSERT INTO POSEER (Estadio, Equipo)
+	VALUES(18,'Manchester United');
+
+INSERT INTO COMPETICION (Nombre, AnioFundacion, URL, Normativa,Pais)
+	VALUES('LaLiga Santander',1929,'https://www.laliga.com/','Normativa La Liga',1);
+INSERT INTO COMPETICION (Nombre, AnioFundacion, URL, Normativa,Pais)
+	VALUES('Champions League',1955,'https://es.uefa.com/uefachampionsleague/','Normativa Champions League',13);
+INSERT INTO COMPETICION (Nombre,  AnioFundacion, URL, Normativa,Pais)
+	VALUES('Premier League',1992,'https://www.premierleague.com/','Normativa Premier League',3);
+INSERT INTO COMPETICION (Nombre,  AnioFundacion, URL, Normativa, Pais)
+	VALUES('Copa del Rey','1903','https://www.rfef.es/noticias/competiciones/copa-del-rey','Normativa Copa del Rey',1);
+
+INSERT INTO PARTIDO (Jornada, Entrada, Local, Visitante, Estadio, Competicion,Temporada,Fecha)
+	VALUES (12, 39645,'Sevilla','Atletico de Madrid',10,1,2019,'2019-11-02');
+INSERT INTO PARTIDO (Jornada, Entrada, Local, Visitante, Estadio, Competicion,Temporada,Fecha)
+	VALUES (12,17343,'Villareal','Athletic de Bilbao',9,1,2019,'2019-11-03');
+INSERT INTO PARTIDO (Jornada, Entrada, Local, Visitante, Estadio, Competicion,Temporada,Fecha)
+	VALUES (12,18514,'Real Valladolid','Mallorca',1,1,2019,'2019-11-03');
+INSERT INTO PARTIDO (Jornada, Entrada, Local, Visitante, Estadio, Competicion,Temporada,Fecha)
+	VALUES (12,9648,'Leganes','Eibar',6,1,2019,'2019-11-03');
+INSERT INTO PARTIDO (Jornada, Entrada, Local, Visitante, Estadio, Competicion,Temporada,Fecha)
+	VALUES (12,70209,'Real Madrid','Real Betis',2,1,2019,'2019-11-02');
+
+INSERT INTO PARTIDO (Jornada, Entrada, Local, Visitante, Estadio, Competicion,Temporada,Fecha)
+	VALUES (12,53324,'Liverpool','Manchester City', 15,3,2019,'2019-11-10');
+INSERT INTO PARTIDO (Jornada, Entrada, Local, Visitante, Estadio, Competicion,Temporada,Fecha)
+	VALUES (12,40525,'Chelsea','Crystal Palace',12,3,2019,'2019-11-09');
+INSERT INTO PARTIDO (Jornada, Entrada, Local, Visitante, Estadio, Competicion,Temporada,Fecha)
+	VALUES (14,40595,'Chelsea','West Ham United',12,3,2019,'2019-11-30');
+INSERT INTO PARTIDO (Jornada, Entrada, Local, Visitante, Estadio, Competicion,Temporada,Fecha)
+	VALUES (14,73381,'Manchester United','Aston Villa',18,3,2019,'2019-12-01');
+INSERT INTO PARTIDO (Jornada, Entrada, Local, Visitante, Estadio, Competicion,Temporada,Fecha)
+	VALUES (15,53094,'Liverpool','Everton',15,3,2019,'2019-12-04');
+INSERT INTO PARTIDO (Jornada, Entrada, Local, Visitante, Estadio, Competicion,Temporada,Fecha)
+	VALUES (15,73252,'Manchester United','Tottenham',18,3,2019,'2019-12-04');
+INSERT INTO PARTIDO (Jornada, Entrada, Local, Visitante, Estadio, Competicion,Temporada,Fecha)
+	VALUES (15,40628,'Chelsea','Aston Villa',12,3,2019,'2019-12-04');
+
+
+INSERT INTO PARTIDO (Jornada, Entrada, Local, Visitante, Estadio, Competicion,Temporada,Fecha)
+	VALUES (3,49308,'Manchester United','Atalanta',17,2,2019,'2019-10-23');
+INSERT INTO PARTIDO (Jornada, Entrada, Local, Visitante, Estadio, Competicion,Temporada,Fecha)
+	VALUES (3,52482,'Ajax','Chelsea',16,2,2019,'2019-10-23');
+INSERT INTO PARTIDO (Jornada, Entrada, Local, Visitante, Estadio, Competicion,Temporada,Fecha)
+	VALUES (3,53035,'Benfica','Olympique Lyonnais',13,2,2019,'2019-10-23');
+INSERT INTO PARTIDO (Jornada, Entrada, Local, Visitante, Estadio, Competicion,Temporada,Fecha)
+	VALUES (3,56776,'Atletico de Madrid','Bayer 04 Leverkusen',5,2,2019,'2019-10-23');
+INSERT INTO PARTIDO (Jornada, Entrada, Local, Visitante, Estadio, Competicion,Temporada,Fecha)
+	VALUES (4,42252,'Chelsea','Ajax',12,2,2019,'2019-11-05');
+INSERT INTO PARTIDO (Jornada, Entrada, Local, Visitante, Estadio, Competicion,Temporada,Fecha)
+	VALUES (4,52611,'Liverpool','KRC Genk',15,2,2019,'2019-11-05');
+INSERT INTO PARTIDO (Jornada, Entrada, Local, Visitante, Estadio, Competicion,Temporada,Fecha)
+	VALUES (4,32862,'Napoles','Red Bull Salzburg',14,2,2019,'2019-11-05');
+INSERT INTO PARTIDO (Jornada, Entrada, Local, Visitante, Estadio, Competicion,Temporada,Fecha)
+	VALUES (4,67023,'Barcelona','Slavia Praha',11,2,2019,'2019-11-05');
+INSERT INTO PARTIDO (Jornada, Entrada, Local, Visitante, Estadio, Competicion,Temporada,Fecha)
+	VALUES (4,65492,'Real Madrid','Galatasaray',2,2,2019,'2019-11-06');
+INSERT INTO PARTIDO (Jornada, Entrada, Local, Visitante, Estadio, Competicion,Temporada,Fecha)
+	VALUES (12,11218,'Real Madrid','Atletico de Madrid',2,1,2019,'2019-02-02');
+INSERT INTO PARTIDO (Jornada, Entrada, Local, Visitante, Estadio, Competicion,Temporada,Fecha)
+	VALUES (12,18514,'Real Valladolid','Mallorca',1,1,2019,'2019-03-01');
+
+
+
+INSERT INTO FICHAJE_FUTBOLISTA (Cantidad_Economica, Sueldo, Fecha_Inicio, Fecha_Fin, Tipo, Equipo, Futbolista)
+	VALUES (222000000,36800000,'2017-08-03','2022-06-30','T','Atletico de Madrid','KI5467888'),(145000000,17500000,'2018-07-01','2022-06-30','T','Real Madrid','LM110519');
+INSERT INTO FICHAJE_FUTBOLISTA (Cantidad_Economica, Sueldo, Fecha_Inicio, Fecha_Fin, Tipo, Equipo, Futbolista)
+	VALUES (145000000,11230000,'2018-01-06','2023-06-30','T','Rayo Vallecano','KK1254789'),(117000000,31000000,'2018-07-01','2022-06-30','T','Mallorca','LM211119');
+INSERT INTO FICHAJE_FUTBOLISTA (Cantidad_Economica, Sueldo, Fecha_Inicio, Fecha_Fin, Tipo, Equipo, Futbolista)
+	VALUES (70000000,1000000 ,'2018-07-01','2023-06-30','T','Mallorca','AK1533555');
+INSERT INTO FICHAJE_FUTBOLISTA (Cantidad_Economica, Sueldo, Fecha_Inicio, Fecha_Fin, Tipo, Equipo, Futbolista)
+	VALUES (1220000,36805,'2015-08-03','2017-08-03','T','Chelsea','KI5467888'),(1520000,38805,'2012-08-03','2015-08-03','T','Real Betis','KI5467888');
+INSERT INTO FICHAJE_FUTBOLISTA (Cantidad_Economica, Sueldo, Fecha_Inicio, Fecha_Fin, Tipo, Equipo, Futbolista)
+	VALUES (112000000,5000000,'2018-07-03','2022-06-30','T','Real Valladolid','AG8512345'),(136000000,7500000,'2018-07-12','2021-05-30','T','Real Valladolid','K12467888');
+INSERT INTO FICHAJE_FUTBOLISTA (Cantidad_Economica, Sueldo, Fecha_Inicio, Fecha_Fin, Tipo, Equipo, Futbolista)
+VALUES (1000000,400000,'2019-08-03','2022-06-30','T','Atletico de Madrid','LM770519');
+INSERT INTO FICHAJE_FUTBOLISTA (Cantidad_Economica, Sueldo, Fecha_Inicio, Fecha_Fin, Tipo, Equipo, Futbolista)
+	VALUES (1000000,400000,'2019-08-03','2022-06-30','T','Real Betis','KK2258777');
+INSERT INTO FICHAJE_FUTBOLISTA (Cantidad_Economica, Sueldo, Fecha_Inicio, Fecha_Fin, Tipo, Equipo, Futbolista)
+	VALUES (1000000,400000,'2019-08-03','2022-06-30','T','Real Valladolid','LM970519');
+INSERT INTO FICHAJE_FUTBOLISTA (Cantidad_Economica, Sueldo, Fecha_Inicio, Fecha_Fin, Tipo, Equipo, Futbolista)
+	VALUES (7300000,440000,'2000-05-12','2000-01-01','T','Real Madrid','AK1524785'),(5400000,150000,'1999-12-05','2008-04-11','T','Manchester City','AL1452789'),(7900000,350000,'1998-02-02','2003-08-15','T','Athletic de Bilbao','PG5214569');
+
+
+
+
+INSERT INTO FICHAJE_ENTRENADOR (Cantidad_Economica, Sueldo, Fecha_Inicio, Fecha_Fin,Equipo, Entrenador) 
+	VALUES (15000000,8000000,'2019-11-20','2023-06-30','Real Madrid','AK1524785'),(13500000,7000000,'2016-07-01','2021-06-30','Manchester City','AL1452789');
+INSERT INTO FICHAJE_ENTRENADOR (Cantidad_Economica, Sueldo, Fecha_Inicio, Fecha_Fin,Equipo, Entrenador)
+	VALUES (10000000,6500000,'2014-07-16','2019-06-30','Real Valladolid','AL2552789'),(9500000,6000000,'2018-05-22','2021-06-30','Mallorca','AL1452999');
+INSERT INTO FICHAJE_ENTRENADOR (Cantidad_Economica, Sueldo, Fecha_Inicio, Fecha_Fin,Equipo, Entrenador)
+	VALUES (10000000,6500000,'2014-07-16','2019-06-30','Athletic de Bilbao','PG5214569');
+INSERT INTO FICHAJE_ENTRENADOR (Cantidad_Economica, Sueldo, Fecha_Inicio, Fecha_Fin,Equipo, Entrenador) 
+	VALUES (13800000,8000000,'2018-12-20','2023-06-30','Chelsea','AL1452789'),(12200000,6500000,'2018-09-01','2021-06-30','Manchester City','AL2552789');
+INSERT INTO FICHAJE_ENTRENADOR (Cantidad_Economica, Sueldo, Fecha_Inicio, Fecha_Fin,Equipo, Entrenador) 
+	VALUES (2800000,600000,'2019-11-20','2022-06-30','Atletico de Madrid','AL1452789');
+INSERT INTO FICHAJE_ENTRENADOR (Cantidad_Economica, Sueldo, Fecha_Inicio, Fecha_Fin,Equipo, Entrenador) 
+	VALUES (2800000,600000,'2019-11-20','2022-06-30','Real Betis','AL2552789');
+INSERT INTO FICHAJE_ENTRENADOR (Cantidad_Economica, Sueldo, Fecha_Inicio, Fecha_Fin,Equipo, Entrenador) 
+	VALUES (2800000,600000,'2019-11-20','2022-06-30','Real Valladolid','AL1452999');
+
+
+
+
+INSERT INTO PARTICIPACION (Equipo, Partido, Futbolista,ID, Titular) 
+	VALUES ('Real Valladolid',3,'KI5667888',1,true),('Real Valladolid',3,'LM770519',2,true),('Real Valladolid',3,'KK1251249',3,true);
+INSERT INTO PARTICIPACION (Equipo, Partido, Futbolista,ID, Titular) 
+	VALUES ('Real Valladolid',3,'AL2555555',4,true),('Real Valladolid',3,'AL1444444',5,true),('Real Valladolid',3,'AG8512345',6,true);
+INSERT INTO PARTICIPACION (Equipo, Partido, Futbolista,ID, Titular) 
+	VALUES ('Real Valladolid',3,'AL1458899',10,false),('Real Valladolid',3,'K12467888',11,true),('Real Valladolid',3,'LM210519',12,true);
+INSERT INTO PARTICIPACION (Equipo, Partido, Futbolista,ID, Titular) 
+	VALUES ('Real Valladolid',3,'KK1254777',13,false),('Real Valladolid',3,'KI5557888',14,true);
+INSERT INTO PARTICIPACION (Equipo, Partido, Futbolista,ID, Titular) 
+	VALUES ('Mallorca',3,'LM870519',15,true),('Mallorca',3,'KL1251249',16,true),('Mallorca',3,'AL2455555',17,true);
+INSERT INTO PARTICIPACION (Equipo, Partido, Futbolista,ID, Titular) 
+	VALUES ('Real Valladolid',3,'AK1524555',7,true),('Real Valladolid',3,'AL1552799',8,false),('Real Valladolid',3,'AL2514289',9,true);
+INSERT INTO PARTICIPACION (Equipo, Partido, Futbolista,ID, Titular) 
+	VALUES ('Mallorca',3,'AL1544444',18,true),('Mallorca',3,'AG8512445',19,true),('Mallorca',3,'AK1533555',20,true);
+INSERT INTO PARTICIPACION (Equipo, Partido, Futbolista,ID, Titular) 
+	VALUES ('Mallorca',3,'AL1552799',21,false),('Mallorca',3,'AL2534289',22,true),('Mallorca',3,'AL1158899',23,true);
+INSERT INTO PARTICIPACION (Equipo, Partido, Futbolista,ID, Titular) 
+	VALUES ('Mallorca',3,'K12477888',24,false),('Mallorca',3,'LM211119',25,true),('Mallorca',3,'KK2254777',26,false);
+INSERT INTO PARTICIPACION (Equipo, Partido, Futbolista,ID, Titular) 
+	VALUES ('Mallorca',3,'K41557888',27,true),('Mallorca',3,'LM970519',28,true);
+INSERT INTO PARTICIPACION (Equipo, Partido, Futbolista,ID, Titular) 
+		VALUES ('Atletico de Madrid',1,'KI5467888',29,true),('Real Madrid',5,'LM110519',30,true);
+INSERT INTO PARTICIPACION (Equipo, Partido, Futbolista,ID, Titular) 
+	VALUES ('Manchester United',11,'OJ1111111',26,false),('Manchester United',11,'OJ1111114',27,false),('Manchester United',11,'OJ1111117',28,false);
+INSERT INTO PARTICIPACION (Equipo, Partido, Futbolista,ID, Titular) 
+	VALUES ('Manchester United',11,'OJ1111112',29,false),('Manchester United',11,'OJ1111115',30,false),('Manchester United',11,'OJ1111118',31,false);
+INSERT INTO PARTICIPACION (Equipo, Partido, Futbolista,ID, Titular) 
+	VALUES ('Manchester United',11,'OJ1111113',32,false),('Manchester United',11,'OJ1111116',33,false),('Manchester United',11,'OJ1111119',34,false);
+INSERT INTO PARTICIPACION (Equipo, Partido, Futbolista,ID, Titular) 
+	VALUES ('Manchester United',9,'OJ1111111',35,false),('Manchester United',9,'OJ1111114',36,false),('Manchester United',9,'OJ1111117',37,false);
+INSERT INTO PARTICIPACION (Equipo, Partido, Futbolista,ID, Titular) 
+	VALUES ('Manchester United',9,'OJ1111112',38,false),('Manchester United',9,'OJ1111115',39,false),('Manchester United',9,'OJ1111118',40,false);
+INSERT INTO PARTICIPACION (Equipo, Partido, Futbolista,ID, Titular) 
+	VALUES ('Villareal',2,'K43377888',41,false);
+INSERT INTO PARTICIPACION (Equipo, Partido, Futbolista,ID, Titular) 
+	VALUES ('Villareal',2,'LL233119',42,false);
+INSERT INTO PARTICIPACION (Equipo, Partido, Futbolista,ID, Titular) 
+	VALUES ('Villareal',2,'KK1258777',43,false);
+INSERT INTO PARTICIPACION (Equipo, Partido, Futbolista,ID, Titular) 
+	VALUES ('Atletico de Madrid',1,'74127846K',44,true);
+INSERT INTO PARTICIPACION (Equipo, Partido, Futbolista,ID, Titular) 
+	VALUES ('Atletico de Madrid',1,'75213497K',45,true);
+INSERT INTO PARTICIPACION (Equipo, Partido, Futbolista,ID, Titular) 
+	VALUES ('Sevilla',1,'75412156K',46,true);
+INSERT INTO PARTICIPACION (Equipo, Partido, Futbolista,ID, Titular) 
+	VALUES ('Sevilla',1,'75412456K',47,true);
+INSERT INTO PARTICIPACION (Equipo, Partido, Futbolista,ID, Titular) 
+	VALUES ('Atletico de Madrid',1,'OC1111116',51,true),('Atletico de Madrid',1,'OC1111117',50,true),('Sevilla',1,'OC1111118',54,true);
+INSERT INTO PARTICIPACION (Equipo, Partido, Futbolista,ID, Titular) 
+	VALUES ('Sevilla',1,'OC1111119',55,true),('Sevilla',1,'OC1111121',58,true),('Sevilla',1,'OC1111122',60,true),('Atletico de Madrid',1,'OC1111115',61,true);
+INSERT INTO PARTICIPACION (Equipo, Partido, Futbolista,ID, Titular) 
+	VALUES ('Villareal',2,'OM1111116',51,true),('Athletic de Bilbao',2,'OM1111117',50,true),('Villareal',2,'OM1111118',54,true);
+INSERT INTO PARTICIPACION (Equipo, Partido, Futbolista,ID, Titular) 
+	VALUES ('Athletic de Bilbao',2,'OM1111119',55,true),('Villareal',2,'OM1111121',58,true),('Athletic de Bilbao',2,'OM1111115',61,true);
+INSERT INTO PARTICIPACION (Equipo, Partido, Futbolista,ID, Titular) 
+	VALUES ('Atletico de Madrid',22,'74127846K',62,true),('Real Madrid',22,'KB1155789',63,true),('Real Valladolid',23,'AK1433555',64,true);
+INSERT INTO PARTICIPACION (Equipo, Partido, Futbolista,ID, Titular) 
+		VALUES ('Atletico de Madrid',16,'KI5467888',65,true),('Manchester United',13,'OJ1111115',66,false),('Manchester United',13,'OJ1111113',67,false);
+
+
+
+
+
+INSERT INTO CAMBIO (Equipo, Partido, Futbolista,ID,Minuto, Sale) 
+	VALUES ('Mallorca',3,'AL1552799',21,61, 'AK1533555'),('Real Valladolid',3,'AL1552799',8,65,'AK1524555');
+INSERT INTO CAMBIO (Equipo, Partido, Futbolista,ID,Minuto, Sale) 
+	VALUES ('Real Valladolid',3,'K12467888',11,72, 'AL1458899'),('Mallorca',3,'KK2254777',26,68,'LM211119');
+INSERT INTO CAMBIO (Equipo, Partido, Futbolista,ID,Minuto, Sale) 
+	VALUES ('Mallorca',3,'LM211119',25 , 61,'AK1533555');
+
+INSERT INTO INCIDENCIA (Equipo, Partido, Futbolista,ID,Minuto) 
+	VALUES ('Atletico de Madrid',1,'KI5467888',29,73);
+INSERT INTO INCIDENCIA (Equipo, Partido, Futbolista,ID,Minuto) 
+	VALUES ('Mallorca',3,'K41557888',27,69), ('Mallorca',3,'LM970519',28,63), ('Real Madrid',5,'LM110519',30,66), ('Mallorca',3,'AK1533555',20,80);
+INSERT INTO INCIDENCIA (Equipo, Partido, Futbolista,ID,Minuto) 
+	VALUES ('Real Valladolid',3,'AK1524555',7,73);
+INSERT INTO INCIDENCIA (Equipo, Partido, Futbolista,ID,Minuto) 
+	VALUES ('Real Valladolid',3,'KI5557888',14,60),('Real Valladolid',3,'KI5557888',14,85);
+INSERT INTO INCIDENCIA (Equipo, Partido, Futbolista,ID,Minuto) 
+	VALUES ('Real Madrid',5,'LM110519',30,69),('Real Valladolid',3,'AL1458899',10,62),('Real Madrid',5,'LM110519',30,89),('Atletico de Madrid',1,'KI5467888',29,66),('Mallorca',3,'LM870519',15,42),('Mallorca',3,'LM870519',15,64),('Real Valladolid',3,'AL1458899',10,31);
+INSERT INTO INCIDENCIA (Equipo, Partido, Futbolista,ID,Minuto) 
+	VALUES ('Mallorca',3,'AG8512445',19,73);
+INSERT INTO INCIDENCIA (Equipo, Partido, Futbolista,ID,Minuto) 
+	VALUES ('Mallorca',3,'AK1533555',20,11);
+INSERT INTO INCIDENCIA (Equipo, Partido, Futbolista,ID,Minuto) 
+	VALUES ('Mallorca',3,'AL2534289',22,63);
+INSERT INTO INCIDENCIA (Equipo, Partido, Futbolista,ID,Minuto) 
+	VALUES ('Mallorca',3,'AL1552799',21,11);
+INSERT INTO INCIDENCIA (Equipo, Partido, Futbolista,ID,Minuto) 
+	VALUES ('Real Valladolid',3,'KI5557888',14,82);
+INSERT INTO INCIDENCIA (Equipo, Partido, Futbolista,ID,Minuto) 
+	VALUES ('Atletico de Madrid',1,'74127846K',44,76);
+INSERT INTO INCIDENCIA (Equipo, Partido, Futbolista,ID,Minuto) 
+	VALUES ('Atletico de Madrid',1,'75213497K',45,12);
+INSERT INTO INCIDENCIA (Equipo, Partido, Futbolista,ID,Minuto) 
+	VALUES ('Sevilla',1,'75412156K',46,53);
+INSERT INTO INCIDENCIA (Equipo, Partido, Futbolista,ID,Minuto) 
+	VALUES ('Sevilla',1,'75412456K',47,25);
+INSERT INTO INCIDENCIA (Equipo, Partido, Futbolista,ID,Minuto) 
+	VALUES ('Atletico de Madrid',1,'OC1111116',51,73),('Atletico de Madrid',1,'OC1111117',50,73);
+INSERT INTO INCIDENCIA (Equipo, Partido, Futbolista,ID,Minuto) 
+	VALUES ('Sevilla',1,'OC1111118',54,73),('Sevilla',1,'OC1111119',55,73);
+INSERT INTO INCIDENCIA (Equipo, Partido, Futbolista,ID,Minuto) 
+	VALUES ('Sevilla',1,'OC1111121',58,73),('Sevilla',1,'OC1111121',58,74);
+INSERT INTO INCIDENCIA (Equipo, Partido, Futbolista,ID,Minuto) 
+	VALUES ('Sevilla',1,'OC1111122',60,73),('Sevilla',1,'OC1111122',60,74);
+INSERT INTO INCIDENCIA (Equipo, Partido, Futbolista,ID,Minuto) 
+	VALUES ('Atletico de Madrid',1,'OC1111115',61,82),('Atletico de Madrid',1,'OC1111115',61,83);
+INSERT INTO INCIDENCIA (Equipo, Partido, Futbolista,ID,Minuto) 
+	VALUES ('Villareal',2,'OM1111116',51,73),('Athletic de Bilbao',2,'OM1111117',50,73),('Athletic de Bilbao',2,'OM1111117',50,75);
+INSERT INTO INCIDENCIA (Equipo, Partido, Futbolista,ID,Minuto) 
+	VALUES ('Villareal',2,'OM1111118',54,73),('Athletic de Bilbao',2,'OM1111119',55,73),('Athletic de Bilbao',2,'OM1111119',55,75),('Villareal',2,'OM1111118',54,74);
+INSERT INTO INCIDENCIA (Equipo, Partido, Futbolista,ID,Minuto) 
+	VALUES ('Villareal',2,'OM1111121',58,73),('Villareal',2,'OM1111121',58,74);
+INSERT INTO INCIDENCIA (Equipo, Partido, Futbolista,ID,Minuto) 
+	VALUES ('Athletic de Bilbao',2,'OM1111115',61,82),('Athletic de Bilbao',2,'OM1111115',61,83);
+INSERT INTO INCIDENCIA (Equipo, Partido, Futbolista,ID,Minuto) 
+	VALUES ('Atletico de Madrid',22,'74127846K',62,40),('Real Madrid',22,'KB1155789',63,43),('Real Valladolid',23,'AK1433555',64,15);
+INSERT INTO INCIDENCIA (Equipo, Partido, Futbolista,ID,Minuto) 
+	VALUES ('Atletico de Madrid',16,'KI5467888',65,70),('Manchester United',13,'OJ1111115',66,89),('Manchester United',13,'OJ1111113',67,80);
+
+
+
+
+
+INSERT INTO AMONESTACION (Equipo,Partido,Futbolista,ID,Minuto,Tipo)
+VALUES ('Real Valladolid',3,'KI5557888',14,60,'A'),
+('Real Valladolid',3,'KI5557888',14,85,'R');
+INSERT INTO AMONESTACION (Equipo,Partido,Futbolista,ID,Minuto,Tipo)
+VALUES ('Real Valladolid',3,'AK1524555',7,73,'R');
+INSERT INTO AMONESTACION (Equipo,Partido,Futbolista,ID,Minuto,Tipo)
+VALUES ('Mallorca',3,'K41557888',27,69,'A'), ('Mallorca',3,'LM970519',28,63,'A'), ('Real Madrid',5,'LM110519',30,66,'R'), ('Mallorca',3,'AK1533555',20,80,'A');
+INSERT INTO AMONESTACION (Equipo,Partido,Futbolista,ID,Minuto,Tipo)
+	VALUES ('Mallorca',3,'AG8512445',19,73,'A'),('Mallorca',3,'AK1533555',20,11,'A'),('Mallorca',3,'AL2534289',22,63,'A'),('Mallorca',3,'AL1552799',21,11,'A');
+INSERT INTO AMONESTACION (Equipo,Partido,Futbolista,ID,Minuto,Tipo)
+	VALUES ('Real Valladolid',3,'KI5557888',14,82,'A');
+INSERT INTO AMONESTACION (Equipo,Partido,Futbolista,ID,Minuto,Tipo)
+VALUES ('Atletico de Madrid',1,'OC1111116',51,73,'A'), ('Atletico de Madrid',1,'OC1111117',50,73,'A');
+INSERT INTO AMONESTACION (Equipo,Partido,Futbolista,ID,Minuto,Tipo)
+VALUES ('Sevilla',1,'OC1111118',54,73,'A'), ('Sevilla',1,'OC1111119',55,73,'A');
+INSERT INTO AMONESTACION (Equipo,Partido,Futbolista,ID,Minuto,Tipo)
+VALUES ('Sevilla',1,'OC1111121',58,73,'A'), ('Sevilla',1,'OC1111121',58,74,'R');
+INSERT INTO AMONESTACION (Equipo,Partido,Futbolista,ID,Minuto,Tipo)
+VALUES ('Sevilla',1,'OC1111122',60,73,'A'), ('Sevilla',1,'OC1111122',60,74,'R');
+INSERT INTO AMONESTACION (Equipo,Partido,Futbolista,ID,Minuto,Tipo)
+VALUES ('Atletico de Madrid',1,'OC1111115',61,82,'A'), ('Atletico de Madrid',1,'OC1111115',61,83,'R');
+INSERT INTO AMONESTACION (Equipo,Partido,Futbolista,ID,Minuto,Tipo)
+	VALUES ('Sevilla',1,'75412156K',46,53,'A');
+INSERT INTO AMONESTACION (Equipo,Partido,Futbolista,ID,Minuto,Tipo)
+VALUES ('Villareal',2,'OM1111116',51,73,'A'), ('Athletic de Bilbao',2,'OM1111117',50,73,'A'),('Athletic de Bilbao',2,'OM1111117',50,75,'R');
+INSERT INTO AMONESTACION (Equipo,Partido,Futbolista,ID,Minuto,Tipo)
+VALUES ('Villareal',2,'OM1111118',54,73,'A'), ('Athletic de Bilbao',2,'OM1111119',55,73,'A'),('Athletic de Bilbao',2,'OM1111119',55,75,'R'),('Villareal',2,'OM1111118',54,74,'R');
+INSERT INTO AMONESTACION (Equipo,Partido,Futbolista,ID,Minuto,Tipo)
+VALUES ('Villareal',2,'OM1111121',58,73,'A'), ('Villareal',2,'OM1111121',58,74,'R');
+INSERT INTO AMONESTACION (Equipo,Partido,Futbolista,ID,Minuto,Tipo)
+VALUES ('Athletic de Bilbao',2,'OM1111115',61,82,'A'), ('Athletic de Bilbao',2,'OM1111115',61,83,'R');
+INSERT INTO AMONESTACION (Equipo,Partido,Futbolista,ID,Minuto,Tipo)
+	VALUES ('Atletico de Madrid',16,'KI5467888',65,70,'R'),('Manchester United',13,'OJ1111115',66,89,'R'),('Manchester United',13,'OJ1111113',67,80,'R');
+
+
+
+
+
+INSERT INTO GOL (Equipo,Partido,Futbolista,ID,Minuto,Forma)
+VALUES ('Atletico de Madrid',1,'KI5467888',29,73,'PY');
+INSERT INTO GOL (Equipo,Partido,Futbolista,ID,Minuto,Forma)
+VALUES ('Real Madrid',5,'LM110519',30,66,'PY');
+INSERT INTO GOL (Equipo,Partido,Futbolista,ID,Minuto,Forma)
+VALUES ('Real Valladolid',3,'KI5557888',14,60,'PY');
+INSERT INTO GOL (Equipo,Partido,Futbolista,ID,Minuto,Forma)
+VALUES ('Real Madrid',5,'LM110519',30,69,'PY'),('Real Valladolid',3,'AL1458899',10,62,'PY'),('Real Madrid',5,'LM110519',30,89,'J'),('Atletico de Madrid',1,'KI5467888',29,66,'PY'),('Mallorca',3,'LM870519',15,42,'J'),('Mallorca',3,'LM870519',15,64,'J'),('Real Valladolid',3,'AL1458899',10,31,'PY');
+INSERT INTO GOL (Equipo,Partido,Futbolista,ID,Minuto,Forma)
+	VALUES ('Atletico de Madrid',1,'74127846K',44,76,'J');
+INSERT INTO GOL (Equipo,Partido,Futbolista,ID,Minuto,Forma)
+	VALUES ('Atletico de Madrid',1,'75213497K',45,12,'F');
+INSERT INTO GOL (Equipo,Partido,Futbolista,ID,Minuto,Forma)
+	VALUES ('Atletico de Madrid',22,'74127846K',62,40,'J'),('Real Madrid',22,'KB1155789',63,43,'J'),('Real Valladolid',23,'AK1433555',64,15,'J');
+ 
+
+
+ 
+
+INSERT INTO ARBITRAR (Arbitro,Partido,Rol)
+VALUES ('K45577888','5','AP') , ('KL1256249',5,'JL') ,('LM880619',5,'4A') , ('KI6557888',5,'VAR');
+INSERT INTO ARBITRAR (Arbitro,Partido,Rol)
+VALUES ('LL243119',1,'AP') , ('KI6557888',1,'JL') ,('KL1256249','1','4A') , ('LM880619',1,'VAR');
+INSERT INTO ARBITRAR (Arbitro,Partido,Rol)
+VALUES ('KI6557888',2,'AP') , ('LL243119',2,'JL') ,('KL1256249','2','4A') , ('KK1298557',2,'VAR');
+INSERT INTO ARBITRAR (Arbitro,Partido,Rol)
+VALUES ('LM880619',3,'AP') , ('KI6557888',3,'JL') ,('LL243119',3,'4A') , ('KL1256249',3,'VAR');
+INSERT INTO ARBITRAR (Arbitro,Partido,Rol)
+VALUES ('KL1256249',4,'AP') ,('LM880619',4,'JL') ,('KI6557888',4,'4A') , ('LL243119','4','VAR');
+INSERT INTO ARBITRAR (Arbitro,Partido,Rol)
+VALUES ('K45577888',3,'JL');
+
+
+
+
+INSERT INTO AFICIONADO (DNI,Nombre, Apellidos, CorreoElectronico, Edad, Equipo)
+VALUES ('75023651G','Marcos','Martinez lopez','mmlopez@gmail.com',22,'Real Betis') ; 
+INSERT INTO AFICIONADO (DNI,Nombre, Apellidos,CorreoElectronico, Edad, Equipo)
+VALUES ('75028457J','Joaquin','Ramos Perez','jrperez@gmail.com',29,'Real Valladolid');
+INSERT INTO AFICIONADO (DNI,Nombre, Apellidos, CorreoElectronico, Edad, Equipo)
+VALUES ('41527893S','Ruben','Jimenez Pedrosa','rjpedrosa@gmail.com',23,'Sevilla'); 
+INSERT INTO AFICIONADO (DNI,Nombre, Apellidos, CorreoElectronico, Edad, Equipo)
+VALUES ('41526389H','Mario','Martin Garcia','mmgarcia@gmail.com',24,'Leganes');
+INSERT INTO AFICIONADO (DNI,Nombre, Apellidos, CorreoElectronico, Edad, Equipo)
+VALUES ('74512654N','Guillermo','Gimenez Rosa','GGrosa@gmail.com',27,'Eibar');
+INSERT INTO AFICIONADO (DNI,Nombre, Apellidos, CorreoElectronico, Edad, Equipo)
+VALUES ('45613625L','Juan','Moreno Gonzalez','JMgonzalez@gmail.com',26,'Athletic de Bilbao');
+INSERT INTO AFICIONADO (DNI,Nombre, Apellidos,CorreoElectronico, Edad, Equipo)
+VALUES ('74512689L','Luis','Arcaño Lopez','lalopez@gmail.com',25,'Real Sociedad');
+INSERT INTO AFICIONADO (DNI,Nombre, Apellidos, CorreoElectronico, Edad, Equipo)
+VALUES ('54621387M','Javier','Lopez Trigueros','jltrigueros@gmail.com',22,'Atletico de Madrid');
+INSERT INTO AFICIONADO (DNI,Nombre, Apellidos, CorreoElectronico, Edad, Equipo)
+VALUES ('75023653Z','Mohamed','Matamoros Garcia','mmgarcia@gmail.com',22,NULL) ;
+INSERT INTO AFICIONADO (DNI,Nombre, Apellidos, CorreoElectronico, Edad, Equipo)
+VALUES ('75023671Y','Juan','Toperas Jimenez','jtjimenez@gmail.com',22,NULL) ;
+INSERT INTO AFICIONADO (DNI,Nombre, Apellidos, CorreoElectronico, Edad, Equipo)
+VALUES ('75023512R','Frederico','Gomez Tomelloso','fgtomelloso@gmail.com',22,NULL);
+INSERT INTO AFICIONADO (DNI,Nombre, Apellidos, CorreoElectronico, Edad, Equipo)
+	VALUES ('88023651G','Nuria','Carreras Marin','ncmartin@gmail.com',25,'Real Valladolid');
+INSERT INTO AFICIONADO (DNI,Nombre, Apellidos, CorreoElectronico, Edad, Equipo)
+	VALUES ('22553651R','Paula','Monreal Alonso','pmalonso@gmail.com',20,'Mallorca');
+INSERT INTO AFICIONADO (DNI,Nombre, Apellidos, CorreoElectronico, Edad, Equipo)
+	VALUES ('66894522M','Jimena','Gutierrez Gutierrez','jgguitierrez@gmail.com',22,'Real Valladolid');
+
+
+
+
+INSERT INTO PERFIL_SOCIAL (Pasaporte,IDRedSocial,Nick,FechaAlta)
+VALUES ('LM110519','T','Modric','2018-12-12');
+INSERT INTO PERFIL_SOCIAL (Pasaporte,IDRedSocial,Nick,FechaAlta)
+VALUES ('KK1254777','T','Sandro','2018-05-24');
+INSERT INTO PERFIL_SOCIAL (Pasaporte,IDRedSocial,Nick,FechaAlta)
+VALUES ('LM770519','T','Moyano','2019-03-18');
+INSERT INTO PERFIL_SOCIAL (Pasaporte,IDRedSocial,Nick,FechaAlta)
+VALUES ('AL1444444','T','Barba','2019-11-30');
+INSERT INTO PERFIL_SOCIAL (Pasaporte,IDRedSocial,Nick,FechaAlta)
+VALUES ('AL1458899','T','Scaloni','2018-12-27');
+INSERT INTO PERFIL_SOCIAL (Pasaporte,IDRedSocial,Nick,FechaAlta)
+VALUES ('AK1524785','T','Zizou','2019-11-01');
+INSERT INTO PERFIL_SOCIAL (Pasaporte,IDRedSocial,Nick,FechaAlta)
+VALUES ('78451236L','T','Sergi','2019-05-24'); 
+INSERT INTO PERFIL_SOCIAL (Pasaporte,IDRedSocial,Nick,FechaAlta)
+VALUES ('KI5467888','I','Morata','2017-02-04'); 
+INSERT INTO PERFIL_SOCIAL (Pasaporte,IDRedSocial,Nick,FechaAlta)
+VALUES ('KI5667888','I','Masip','2019-11-22');
+INSERT INTO PERFIL_SOCIAL (Pasaporte,IDRedSocial,Nick,FechaAlta)
+VALUES ('LL233119','I','Bacca','2019-11-19');
+INSERT INTO PERFIL_SOCIAL (Pasaporte,IDRedSocial,Nick,FechaAlta)
+VALUES ('AL2514289','I','JReyes','2019-11-11'); 
+INSERT INTO PERFIL_SOCIAL (Pasaporte,IDRedSocial,Nick,FechaAlta)
+VALUES ('AK1524785','I','Zizou','2016-11-07');
+INSERT INTO PERFIL_SOCIAL (Pasaporte,IDRedSocial,Nick,FechaAlta)
+VALUES ('K43377888','Y','Ontiveros','2019-01-18');
+INSERT INTO PERFIL_SOCIAL (Pasaporte,IDRedSocial,Nick,FechaAlta)
+VALUES('AK1524785','Y','Zizou','2017-03-12');
+
+
+
+
+INSERT INTO SEGUIR (Aficionado,Pasaporte,IDRedSocial,Nick)
+VALUES ('75023651G','KI5467888','I','Morata'); 
+INSERT INTO SEGUIR (Aficionado,Pasaporte,IDRedSocial,Nick)
+VALUES ('75023651G','LM110519','T','Modric');
+INSERT INTO SEGUIR (Aficionado,Pasaporte,IDRedSocial,Nick)
+VALUES ('41527893S','KI5667888','I','Masip'); 
+INSERT INTO SEGUIR (Aficionado,Pasaporte,IDRedSocial,Nick)
+VALUES ('75023651G','K43377888','Y','Ontiveros');
+INSERT INTO SEGUIR (Aficionado,Pasaporte,IDRedSocial,Nick)
+VALUES ('41526389H','LL233119','I','Bacca');
+INSERT INTO SEGUIR (Aficionado,Pasaporte,IDRedSocial,Nick)
+VALUES ('41527893S','KK1254777','T','Sandro');
+INSERT INTO SEGUIR (Aficionado,Pasaporte,IDRedSocial,Nick)
+VALUES ('75028457J','LM770519','T','Moyano');
+INSERT INTO SEGUIR (Aficionado,Pasaporte,IDRedSocial,Nick)
+VALUES ('75028457J','AL2514289','I','JReyes');
+INSERT INTO SEGUIR (Aficionado,Pasaporte,IDRedSocial,Nick)
+	VALUES ('45613625L','KI5467888','I','Morata');
+INSERT INTO SEGUIR (Aficionado,Pasaporte,IDRedSocial,Nick)
+	VALUES ('54621387M','KI5467888','I','Morata');
+
+
+
+INSERT INTO ASISTIR (Aficionado, Partido) VALUES ('75023671Y',4),('75028457J',5),('75023671Y',3),('75028457J',2),('75023671Y',1),('75028457J',7),('75023671Y',2),('75023671Y',5),('75023671Y',6),('75023671Y',7);
+INSERT INTO ASISTIR (Aficionado,Partido) VALUES ('75023671Y',8),('75023671Y',9),('75023671Y',10),('75023671Y',11),('75023671Y',12),('75023671Y',13),('75023671Y',14),('75023671Y',15),('75023671Y',16),('75023671Y',17),('75023671Y',18);
+INSERT INTO ASISTIR (Aficionado, Partido) VALUES ('41526389H',4),('41526389H',5),('41526389H',3),('41526389H',2),('41526389H',1),('41526389H',6),('41526389H',7),('41526389H',8),('41526389H',9),('41526389H',10);
+INSERT INTO ASISTIR (Aficionado,Partido) VALUES ('41526389H',11),('41526389H',12),('41526389H',13),('41526389H',14),('41526389H',15),('41526389H',16),('41526389H',17);
+INSERT INTO ASISTIR (Aficionado, Partido) VALUES ('54621387M',4),('54621387M',5),('54621387M',3),('54621387M',2),('54621387M',1),('54621387M',6),('54621387M',7),('54621387M',8),('54621387M',9),('54621387M',10);
+INSERT INTO ASISTIR (Aficionado,Partido) VALUES ('54621387M',11),('54621387M',12),('54621387M',13),('54621387M',14),('54621387M',15),('54621387M',16),('54621387M',17);
+INSERT INTO ASISTIR (Aficionado,Partido)
+	VALUES('22553651R',3),('66894522M',3),('88023651G',3);
+
+
+
+
+

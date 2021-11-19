@@ -1,0 +1,387 @@
+CONSULTA 1:
+
+DELETE FROM AGENCIA 
+WHERE Nombre = "nik.O. Representantes";
+
+CONSULTA 2:
+
+UPDATE ESTADIO
+SET Capacidad = 26512
+WHERE Nombre = "Estadio José Zorrilla";
+
+CONSULTA 3:
+
+SELECT Nombre
+FROM ESTADIO
+WHERE Capacidad > 50000;
+
+CONSULTA 4:
+
+SELECT pr.Pasaporte,pr.Nombre,pr.Apellidos,pa.Nombre AS PaisNacimiento
+FROM PROFESIONAL pr,PAIS pa
+WHERE pr.Apellidos LIKE("%Fernández%") AND pr.Pais = pa.Codigo;
+
+CONSULTA 5:
+
+SELECT t.Equipo,SUM(t.Cantidad_Economica) AS Cantidad
+FROM ((SELECT e.Nombre AS Equipo, ff.Cantidad_Economica
+FROM FICHAJE_FUTBOLISTA ff, EQUIPO e 
+WHERE ff.Equipo = e.Nombre AND ff.Fecha_Inicio BETWEEN '2018-01-01' AND '2018-12-31')
+UNION ALL
+(SELECT e.Nombre AS Equipo, fe.Cantidad_Economica
+FROM FICHAJE_ENTRENADOR fe, EQUIPO e 
+WHERE fe.Equipo = e.Nombre AND fe.Fecha_Inicio BETWEEN '2018-01-01' AND '2018-12-31')) t
+GROUP BY (t.Equipo)
+ORDER BY Cantidad DESC
+LIMIT 5;
+
+CONSULTA 6 
+
+SELECT af.Nombre,af.Apellidos
+FROM AFICIONADO af, ASISTIR a
+WHERE af.DNI = a.Aficionado
+GROUP BY af.DNI
+HAVING COUNT(a.Partido) >= 15;
+
+CONSULTA 7:
+
+SELECT pl.Nombre,pl.Apellidos,COUNT(g.ID) AS Numero_Goles
+FROM FUTBOLISTA f,GOL g, COMPETICION c, PARTIDO p, PROFESIONAL pl 
+WHERE g.Futbolista = f.Pasaporte AND g.Partido = p.ID AND p.Competicion = c.ID AND f.Pasaporte = pl.Pasaporte AND c.Nombre = "LaLiga Santander" AND p.Temporada = 2019
+GROUP BY (pl.Pasaporte,pl.Nombre,pl.Apellidos)
+ORDER BY(Numero_Goles) DESC
+LIMIT 5;
+
+CONSULTA 8: 
+
+SELECT Nombre,Apellidos
+FROM PROFESIONAL
+WHERE Pasaporte IN (SELECT DISTINCT Futbolista FROM GOL WHERE Minuto BETWEEN 60 AND 70 AND Forma = 'PY');
+
+CONSULTA 9:
+
+SELECT Nombre,Apellidos,FLOOR(DATEDIFF(NOW(),Fecha_Nacimiento)/365) AS Edad
+FROM PROFESIONAL
+WHERE Pasaporte IN (SELECT Pasaporte FROM ARBITRO) AND Fecha_Debut BETWEEN '2019-01-01' AND '2019-12-31'
+ORDER BY Edad DESC;
+
+CONSULTA 10:
+
+SELECT p.Nombre, p.Apellidos, a.Institucion,ar.Rol
+FROM PROFESIONAL p, ARBITRO a, ARBITRAR ar, PARTIDO pa, COMPETICION c
+WHERE ar.Arbitro = a.Pasaporte AND a.Pasaporte = p.Pasaporte AND pa.Competicion = c.ID AND ar.Partido = pa.ID AND c.Nombre = "LaLiga Santander" AND pa.Local = "Real Valladolid" AND pa.Visitante = "Mallorca" AND pa.Fecha = '2019-11-03';
+
+CONSULTA 11:
+
+SELECT p.Nombre, p.Apellidos, ff.Equipo, "Futbolista" AS Rol
+FROM REPRESENTAR_1 r1, FUTBOLISTA f, PROFESIONAL p, AGENCIA a,FICHAJE_FUTBOLISTA ff
+WHERE r1.Futbolista = f.Pasaporte AND p.Pasaporte = f.Pasaporte AND r1.Agencia = a.CodigoFiscal AND ff.Futbolista = f.Pasaporte AND a.Nombre = "nik.O. Representantes" AND r1.Fecha_Ini BETWEEN '2019-01-01' AND '2019-12-31'
+UNION ALL
+SELECT p.Nombre, p.Apellidos,fe.Equipo, "Entrenador" AS Rol
+FROM REPRESENTAR_2 r2, ENTRENADOR e, PROFESIONAL p, AGENCIA a,FICHAJE_ENTRENADOR fe
+WHERE r2.Entrenador = e.Pasaporte AND p.Pasaporte = e.Pasaporte AND r2.Agencia = a.CodigoFiscal AND fe.Entrenador = e.Pasaporte AND a.Nombre = "nik.O. Representantes" AND r2.Fecha_Ini BETWEEN '2019-01-01' AND '2019-12-31';
+
+CONSULTA 12:
+
+SELECT pl.Nombre,pl.Apellidos,i.Minuto,e.Nombre
+FROM PROFESIONAL pl, FUTBOLISTA f, PARTICIPACION pn, PARTIDO po, EQUIPO e, INCIDENCIA i, GOL g, COMPETICION c
+WHERE pl.Pasaporte = f.Pasaporte AND f.Pasaporte = pn.Futbolista AND pn.Partido = po.ID AND c.ID = po.Competicion AND pn.Equipo = e.Nombre AND pn.Equipo = i.Equipo AND pn.Partido = i.Partido AND pn.Futbolista = i.Futbolista AND pn.ID = i.ID AND i.Equipo = g.Equipo AND i.Partido = g.Partido AND i.Futbolista = g.Futbolista AND i.ID = g.ID AND i.Minuto = g.Minuto AND c.Nombre = "LaLiga Santander" AND po.Fecha = '2019-11-03' AND g.Forma = 'PY';
+
+
+CONSULTA 13:
+
+SELECT pl.Nombre,pl.Apellidos,COUNT(*) AS NumGoles
+FROM PROFESIONAL pl, FUTBOLISTA f, PARTICIPACION pn, PARTIDO po, INCIDENCIA i, GOL g, COMPETICION c
+WHERE pl.Pasaporte = f.Pasaporte AND f.Pasaporte = pn.Futbolista AND pn.Partido = po.ID AND c.ID = po.Competicion AND pn.Equipo = i.Equipo AND pn.Partido = i.Partido AND pn.Futbolista = i.Futbolista AND pn.ID = i.ID AND i.Equipo = g.Equipo AND i.Partido = g.Partido AND i.Futbolista = g.Futbolista AND i.ID = g.ID AND i.Minuto = g.Minuto AND c.Nombre = "LaLiga Santander" AND po.Temporada = 2019
+GROUP BY pl.Pasaporte,pl.Nombre,pl.Apellidos
+ORDER BY (NumGoles) DESC
+LIMIT 1;
+
+CONSULTA 14:
+
+SELECT fi.Equipo, fi.Fecha_Inicio, fi.Fecha_Fin
+FROM FUTBOLISTA fu, FICHAJE_FUTBOLISTA fi 
+WHERE fi.Futbolista = fu.Pasaporte AND fu.Pasaporte = (SELECT Futbolista FROM FICHAJE_FUTBOLISTA ORDER BY Cantidad_Economica DESC LIMIT 1)
+
+#Consulta 15 
+DELETE FROM ESTADIO
+	WHERE Nombre='Vicente Calderon'
+
+#Consulta 16 
+UPDATE ESTADIO
+	SET Nombre='Real Arena'
+	WHERE Nombre='Anoeta';
+
+#Consulta 17 
+SELECT p.Nombre, p.Apellidos, f.Internacionalidades, f.Goles_Seleccion 
+	FROM PROFESIONAL p, FUTBOLISTA f, PARTICIPACION par
+	WHERE f.Posicion ='DC'AND p.Pasaporte = f.Pasaporte AND par.Futbolista = p.Pasaporte AND par.Partido = ANY
+                (SELECT ID  
+		FROM PARTIDO 
+		WHERE Fecha BETWEEN '2019-01-01' AND '2019-05-31' AND Competicion IN (SELECT ID
+		FROM COMPETICION));
+
+#Consulta 18 
+SELECT a.Nombre, (p.Nombre) AS Pais
+	FROM AGENCIA a, PAIS p
+	WHERE a.Nombre like ('%Representantes%') AND a.Pais IN (SELECT Codigo FROM PAIS ) AND a.Pais = p.Codigo;
+
+#Consulta 19 
+SELECT Nick, IDRedSocial, COUNT( Aficionado ) AS NumAficionados
+	FROM SEGUIR
+	GROUP BY Nick, IDRedSocial
+	ORDER BY NumAficionados DESC
+	LIMIT 1;
+
+#Consulta 20(
+SELECT  Nombre, Apellidos
+    FROM AFICIONADO 
+    WHERE DNI IN (SELECT Aficionado
+        FROM SEGUIR
+        GROUP BY Aficionado
+        HAVING COUNT(Nick) >= 2);
+
+#Consulta 21
+SELECT p.Nombre, p.Apellidos ,fich.Sueldo, fich.Sueldo/AVG(fich.Sueldo) AS SueldoProporcion
+	FROM FUTBOLISTA f, FICHAJE_FUTBOLISTA fich,PROFESIONAL p
+	WHERE p.Pasaporte = f.Pasaporte AND f.Pasaporte = (SELECT Futbolista
+			FROM FICHAJE_FUTBOLISTA 
+			HAVING MAX(Sueldo) AND fich.Futbolista = f.Pasaporte);
+
+
+#Consulta 22 
+SELECT Nombre, Capacidad
+	FROM ESTADIO
+	WHERE Codigo = (SELECT Codigo
+				FROM CIUDAD
+				WHERE Nombre = 'Madrid'); 
+
+
+
+#Consulta 23
+SELECT p.Nombre, p.Apellidos, fe.Cantidad_Economica
+	FROM PROFESIONAL p, ENTRENADOR e, FICHAJE_ENTRENADOR fe
+	WHERE e.Pasaporte =fe.Entrenador AND e.Pasaporte = p.Pasaporte
+	ORDER BY Cantidad_Economica ASC;
+
+
+#Consulta 24
+SELECT af.Equipo, COUNT(a.Aficionado) AS Socios
+	FROM ASISTIR a, AFICIONADO af, PARTIDO p, COMPETICION c
+	WHERE af.DNI= a.Aficionado AND a.Partido = p.Id AND p.Competicion = c.Id AND p.Fecha = '2019-11-03' AND c.Nombre = 'LaLiga Santander' AND p.Local = "Real Valladolid" AND p.Visitante = "Mallorca" AND af.Equipo = "Real Valladolid"
+UNION
+SELECT af.Equipo, COUNT(a.Aficionado) AS Socios
+	FROM ASISTIR a, AFICIONADO af, PARTIDO p, COMPETICION c
+	WHERE af.DNI= a.Aficionado AND a.Partido = p.Id AND p.Competicion = c.Id AND p.Fecha = '2019-11-03' AND c.Nombre = 'LaLiga Santander' AND p.Local = "Real Valladolid" AND p.Visitante = "Mallorca" AND af.Equipo = "Mallorca";
+
+
+#Consulta 25
+SELECT DISTINCT p.Nombre,p.Apellidos, e.Nombre AS Equipo
+FROM FICHAJE_ENTRENADOR fe, EQUIPO e, FICHAJE_FUTBOLISTA ff, PROFESIONAL p
+WHERE fe.Equipo = e.Nombre AND e.Nombre = ff.Equipo AND p.Pasaporte = ff.Futbolista AND fe.Entrenador= ff.Futbolista;
+
+
+#Consulta 26
+SELECT pr.Nombre, pr.Apellidos, i.Minuto AS MinExpulsado, par.Equipo
+FROM PARTICIPACION par, INCIDENCIA i, AMONESTACION a, FUTBOLISTA f, PROFESIONAL pr 
+WHERE par.Partido IN (SELECT p.ID FROM PARTIDO p
+WHERE p.Fecha = '2019-10-23' AND p.Competicion IN (SELECT c.ID FROM COMPETICION c WHERE c.Nombre='Champions League')) AND par.ID = i.ID AND i.ID= a.ID AND a.Tipo='R' AND i.Futbolista=f.Pasaporte AND pr.Pasaporte=f.Pasaporte;
+
+#Consulta 27
+SELECT ps.Nombre, Count(DISTINCT g.ID) AS Goles
+FROM COMPETICION c, GOL g, PARTICIPACION par, PARTIDO p,PAIS ps
+WHERE g.ID  = PAR.ID AND par.Partido = p.ID AND p.Competicion=c.ID AND p.ID = ps.Codigo 
+GROUP BY PAIS
+ORDER BY GOLES DESC
+LIMIT 1;
+
+
+#Consulta 28
+SELECT p.Nombre, p.Apellidos, p.Fecha_Debut
+	FROM PROFESIONAL p, ARBITRO a
+	WHERE p.Pasaporte = a.Pasaporte
+	AND a.Pasaporte IN (SELECT Arbitro FROM ARBITRAR WHERE Rol = 'AP')
+	AND a.Pasaporte IN (SELECT Arbitro FROM ARBITRAR WHERE Rol = 'JL')
+	AND a.Pasaporte IN (SELECT Arbitro FROM ARBITRAR WHERE Rol = '4A')
+	AND a.Pasaporte IN (SELECT Arbitro FROM ARBITRAR WHERE Rol = 'VAR');
+
+#Consulta 29
+DELETE 
+FROM PERFIL_SOCIAL 
+	WHERE IDRedSocial='T' AND Pasaporte IN 	(SELECT Pasaporte
+							FROM PROFESIONAL
+							WHERE Nombre='Sergi' AND Apellidos='Guardiola Navarro');
+#Consulta 30
+UPDATE competicion
+SET Normativa='Fútbol-2019-04-bis'
+	where Pais=1;
+
+#Consulta 31
+SELECT Nick,IdRedSocial 
+from perfil_social
+	WHERE FechaAlta BETWEEN '2019-11-01' AND '2019-11-31';
+
+#Consulta 32 
+SELECT Nombre, Apellidos
+FROM Aficionado
+WHERE Edad=22 AND Equipo IS NULL;
+
+#Consulta 33
+SELECT Estadio,AVG(Entrada) AS Promedio
+FROM PARTIDO
+	WHERE Temporada=2019
+	GROUP BY Estadio
+	ORDER BY Promedio ASC
+	LIMIT 3;
+
+#Consulta 34
+SELECT Equipo, SUM(Cantidad_Economica) AS Gastos_Fichajes
+FROM FICHAJE_FUTBOLISTA
+	WHERE Cantidad_Economica>15000000 AND Fecha_Inicio BETWEEN '2018-01-01' AND '2018-12-31'
+	GROUP BY Equipo
+	ORDER BY Cantidad_Economica ASC;
+
+#Consulta 35
+SELECT p.Local, p.Visitante, c.Nombre,COUNT(a.Partido) AS Amonestaciones
+FROM PARTIDO p, COMPETICION c,AMONESTACION a,INCIDENCIA i,PARTICIPACION Pt
+	WHERE p.Competicion=c.ID AND p.ID=pt.Partido AND  pt.Partido=i.Partido AND
+	pt.Equipo=i.Equipo AND pt.Futbolista=i.Futbolista AND pt.ID=i.ID AND i.Minuto=a.Minuto AND
+	a.Partido=i.Partido AND a.Equipo=i.Equipo AND a.Futbolista=i.Futbolista AND a.ID=i.ID
+	GROUP BY a.Partido
+    	HAVING Amonestaciones >= 10;
+
+#Consulta 36
+SELECT DISTINCT p.Nombre, p.Apellidos
+FROM PROFESIONAL p, PERFIL_SOCIAL ps
+	WHERE p.Pasaporte=ps.Pasaporte AND (IDRedSocial='I' OR IDRedSocial='T');
+
+#Consulta 37
+SELECT ps.IDRedSocial, ps.Nick,ps.FechaAlta
+FROM PROFESIONAL p, PERFIL_SOCIAL ps
+	WHERE p.Pasaporte=ps.Pasaporte AND p.Nombre='Zinedine' AND p.Apellidos='Zidane'
+	ORDER BY FechaAlta ASC;
+
+#Consulta 38
+SELECT p.Nombre, p.Apellidos, COUNT(*) AS NumPartidos
+FROM PROFESIONAL p, ARBITRO a,ARBITRAR ar, PARTIDO pt, COMPETICION c,PAIS ps
+	WHERE ps.Codigo=c.Pais AND c.ID=pt.Competicion AND pt.ID=ar.Partido AND ar.Arbitro=a.Pasaporte AND a.Pasaporte=p.Pasaporte
+		AND ar.Rol='VAR' AND ps.Nombre='España'
+	GROUP BY pt.ID
+	ORDER BY NumPartidos;
+
+#Consulta 39 
+SELECT ff.Equipo
+FROM PROFESIONAL p, FICHAJE_FUTBOLISTA ff, FUTBOLISTA f
+WHERE p.Pasaporte= f.Pasaporte AND f.Pasaporte=ff.Futbolista AND
+	ff.Fecha_Inicio BETWEEN '2019-01-01' AND '2019-12-31' AND p.Nacionalidad='Chilena' AND ff.Equipo IN 
+ (SELECT fe.Equipo
+   FROM PROFESIONAL p, FICHAJE_ENTRENADOR fe, ENTRENADOR e
+  	WHERE p.Nacionalidad ="Argentina" AND  p.Pasaporte= e.Pasaporte AND e.Pasaporte=fe.Entrenador AND fe.Fecha_Inicio BETWEEN '2019-01-01' AND '2019-12-31')
+
+#Consulta 40
+SELECT p.Nombre, p.Apellidos, f.Posicion
+FROM PROFESIONAL p, FUTBOLISTA f, COMPETICION c, PARTIDO par, PARTICIPACION pn, EQUIPO eq
+WHERE p.Pasaporte=f.Pasaporte AND f.Pasaporte =pn.Futbolista AND pn.Partido =par.ID AND par.Competicion=c.ID AND pn.Equipo = eq.Nombre AND par.Local='Real Valladolid' AND par.Visitante='Mallorca' AND c.Nombre='LaLiga Santander' AND pn.Titular=1 AND eq.Nombre='Real Valladolid' AND par.Fecha='2019-11-03';
+
+#Consulta 41
+SELECT p.Nombre, p.Apellidos,eq.Nombre
+FROM PROFESIONAL p, FUTBOLISTA f,PARTICIPACION pt, EQUIPO eq, PARTIDO pr, ESTADIO est, POSEER psr,COMPETICION c
+	WHERE p.Pasaporte=f.Pasaporte AND f.Pasaporte=pt.Futbolista AND pt.Partido=pr.ID AND pr.Competicion=c.Id
+	AND pr.Estadio=est.Id AND est.ID=psr.Estadio AND psr.Equipo=eq.Nombre AND
+	c.Nombre='Premier League' AND pr.Temporada=2019 AND pt.Titular=0
+    GROUP BY p.Pasaporte
+    ORDER BY COUNT( pt.ID) DESC
+	LIMIT 5;
+
+#Consulta 42
+SELECT p.Nombre, p.Apellidos,ps.Nick,ps.FechaAlta
+FROM PROFESIONAL p LEFT JOIN PERFIL_SOCIAL ps ON p.Pasaporte= ps.Pasaporte AND ps.IDRedSocial='T';
+
+#Consulta 43
+	DELETE 
+    	FROM SEGUIR
+	WHERE Aficionado = (SELECT DNI FROM AFICIONADO WHERE Nombre = "Marcos" AND Apellidos = "Martinez Lopez") AND IDRedSocial = 'I';
+
+#Consulta 44
+	UPDATE futbolista 
+	SET Goles_Seleccion = Goles_Seleccion +1
+    	WHERE Pasaporte IN (SELECT Pasaporte FROM PROFESIONAL WHERE Apellidos = "Modric" OR Apellidos = "Morata");
+	
+
+
+#Consulta 45
+	SELECT Nombre, Apellidos,CorreoElectronico
+	FROM `aficionado` 
+	WHERE Edad BETWEEN 24 AND 27;
+
+
+
+#Consulta 46
+	SELECT Profesion_aparte
+	FROM `arbitro` 
+	WHERE Institucion LIKE 'Colegio Regional%';
+
+
+#Consulta 47
+
+
+#Consulta 48
+
+
+#Consulta 49
+	SELECT p.nombre, p.apellidos, COUNT(*) AS Rojas
+	FROM AMONESTACION a, FUTBOLISTA f, PROFESIONAL p
+	WHERE a.Tipo = 'R' AND a.Futbolista = f.Pasaporte AND f.Pasaporte = p.Pasaporte
+	GROUP BY p.Pasaporte, p.Nombre, p.Apellidos
+    	ORDER BY Rojas DESC
+    	LIMIT 3;
+
+
+#Consulta 50
+	SELECT a.Nombre, f.Pasaporte
+	FROM Representar_1 r , Futbolista f, Agencia a
+	WHERE f.Pasaporte = 'LM110519' AND r.Futbolista = f.Pasaporte AND r.Agencia = a.CodigoFiscal; 
+
+
+#Consulta 51
+	SELECT p.Nombre,p.Apellidos,f.Valor
+	FROM futbolista f , profesional p
+	WHERE f.valor > 10000000 AND f.Pasaporte = p.Pasaporte
+	ORDER BY f.valor DESC;
+
+#Consulta 52
+	SELECT e.Nombre,p.nombre,p.apellidos, MAX(fi.Cantidad_Economica)
+	FROM equipo e, profesional p, futbolista f, fichaje_futbolista fi,competicion c
+	WHERE c.nombre = 'LaLiga Santander' AND f.Pasaporte = p.Pasaporte  AND fi.equipo = e.Nombre 
+	AND fi.futbolista = f.Pasaporte ;
+
+
+#Consulta 53
+
+	SELECT DISTINCT pl.Nombre, pl.Apellidos,pn.Equipo,i.Minuto,"Gol" as incidencia
+	FROM PROFESIONAL pl, FUTBOLISTA f, PARTICIPACION pn, PARTIDO po, COMPETICION c, INCIDENCIA i, GOL g 
+	WHERE pl.Pasaporte = f.Pasaporte AND f.Pasaporte = pn.Futbolista AND pn.Partido = po.ID AND po.Competicion = c.ID AND pn.ID = i.ID AND g.ID = i.ID AND c.Nombre = "LaLiga Santander" 
+	AND po.Local = "Sevilla" AND po.Visitante = "Atletico de Madrid" AND po.Fecha = '2019-11-02'
+	UNION ALL
+	SELECT DISTINCT pl.Nombre, pl.Apellidos,pn.Equipo,a.Minuto,"Amonestacion" as incidencia
+	FROM PROFESIONAL pl, FUTBOLISTA f, PARTICIPACION pn, PARTIDO po, COMPETICION c, INCIDENCIA i, AMONESTACION a 
+	WHERE pl.Pasaporte = f.Pasaporte AND f.Pasaporte = pn.Futbolista AND pn.Partido = po.ID AND po.Competicion = c.ID AND pn.ID = i.ID AND a.ID = i.ID AND c.Nombre = "LaLiga Santander" 
+	AND po.Local = "Sevilla" AND po.Visitante = "Atletico de Madrid" AND po.Fecha = '2019-11-02';
+
+
+#Consulta 54
+	SELECT p.nombre,p.apellidos,f.Posicion
+	FROM futbolista f, profesional p,partido par,equipo e, participacion pa, estadio es, competicion com
+	WHERE par.fecha = '2019-11-03' AND pa.Titular = false AND par.local = 'Villareal' AND par.local = e.nombre AND par.visitante = e.nombre 
+		AND par.estadio = es.ID AND par.competicion = com.ID 
+		AND f.Pasaporte = p.pasaporte AND pa.Equipo = e.nombre 
+		AND pa.Partido = par.id AND pa.Futbolista = f.Pasaporte;
+
+
+#Consulta 55
+
+
+#Consulta 56
+	SELECT p.Nombre
+	FROM perfil_social ps, profesional p
+	WHERE  p.Nacionalidad = 'Española' AND ps.IDRedSocial <> 'I' AND ps.Pasaporte = p.Pasaporte;
